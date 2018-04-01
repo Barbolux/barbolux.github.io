@@ -112,8 +112,8 @@
         }
         
         .silex-id-1513281345038-1 {
-            top: 11px;
-            left: 305px;
+            top: 5px;
+            left: 5px;
             min-width: 600px;
             background-color: rgba(33, 33, 33, 1);
             border-radius: 0px 0px 0px 0px;
@@ -271,6 +271,26 @@
             left: 300px;
         }
         
+        .silex-id-1513423946729-17 {
+            width: 122px;
+            background-color: rgba(0, 0, 0, 1);
+            min-height: 51px;
+            top: 14px;
+            left: 81px;
+            border-style: ridge;
+            border-width: 5px 5px 5px 5px;
+            border-color: #000000;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1513424070383-18 {
+            width: 78px;
+            min-height: 23px;
+            top: 23px;
+            left: 30px;
+            border-color: #000000;
+        }
+        
         .silex-id-1517765408536-0 {
             width: 450px;
             min-height: 1190px;
@@ -313,11 +333,11 @@
             border-style: solid;
         }
         
-        .silex-id-1522612452686-1 {
-            width: 450px;
-            min-height: 2658px;
-            top: 6px;
-            left: 300px;
+        .silex-id-1517779456110-1 {
+            width: 368px;
+            min-height: 345px;
+            top: 100px;
+            left: 490px;
         }
         
         .silex-id-1490693608162-3 {
@@ -565,6 +585,13 @@
             min-height: 127px;
             top: 43px;
             left: 65px;
+        }
+        
+        .silex-id-1522613965891-2 {
+            width: 503px;
+            min-height: 324px;
+            top: 8px;
+            left: 72px;
         }
         
         .silex-id-1490694152451-11 {
