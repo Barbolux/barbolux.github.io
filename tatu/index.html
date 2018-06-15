@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            background-color: rgba(255, 255, 255, 1);
+            left: 0px;
+            top: 0px;
+        }
+        
+        .silex-id-1478366444112-1 {
+            top: 5px;
+            left: 5px;
+            background-color: rgba(180, 180, 180, 1);
+            min-width: 960px;
+        }
+        
+        .silex-id-1478366444112-0 {
+            min-height: 90px;
+            background-color: rgba(149, 149, 149, 1);
+            width: 960px;
+            top: 15px;
+            left: 220px;
+        }
+        
+        .silex-id-1518112029294-0 {
+            width: 671px;
+            min-height: 81px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518271128119-1 {
+            width: 847px;
+            min-height: 120px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518270978944-0 {
+            width: 847px;
+            min-height: 120px;
+            top: 0px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1518214998514-4 {
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            min-height: 90px;
+            top: 0px;
+            left: 860px;
+        }
+        
+        .silex-id-1518214904249-2 {
+            width: 20px;
+            min-height: 20px;
+            top: 5px;
+            left: 5px;
+        }
+        
+        .silex-id-1518214942943-3 {
+            width: 20px;
+            min-height: 20px;
+            top: 35px;
+            left: 5px;
+        }
+        
+        .silex-id-1518215062791-5 {
+            width: 20px;
+            min-height: 20px;
+            top: 65px;
+            left: 5px;
+        }
+        
+        .silex-id-1518215099148-6 {
+            width: 56px;
+            min-height: 20px;
+            top: 5px;
+            left: 30px;
+        }
+        
+        .silex-id-1518215131628-7 {
+            width: 65px;
+            min-height: 20px;
+            top: 35px;
+            left: 30px;
+        }
+        
+        .silex-id-1518215138674-8 {
+            width: 56px;
+            min-height: 20px;
+            top: 65px;
+            left: 30px;
+        }
+        
+        .silex-id-1474394621033-3 {
+            top: 140px;
+            left: 5px;
+            background-color: rgba(46, 46, 46, 1);
+            min-width: 960px;
+        }
+        
+        .silex-id-1474394621032-2 {
+            min-height: 320px;
+            background-color: rgba(53, 233, 117, 1);
+            width: 960px;
+            top: 15px;
+            left: 100px;
+            border-radius: 20px 20px 20px 20px;
+            border-width: 5px 5px 5px 5px;
+            border-style: solid;
+        }
+        
+        .silex-id-1518112395580-3 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1518116903648-0 {
+            width: 220px;
+            background-color: rgba(79, 24, 139, 1);
+            min-height: 218px;
+            top: 10px;
+            left: 400px;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        .silex-id-1518117941686-4 {
+            width: 90px;
+            min-height: 90px;
+            top: 10px;
+            left: 115px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518116972654-2 {
+            width: 90px;
+            min-height: 90px;
+            top: 10px;
+            left: 10px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518116929404-1 {
+            width: 90px;
+            min-height: 90px;
+            top: 115px;
+            left: 115px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518118022345-5 {
+            width: 90px;
+            min-height: 90px;
+            top: 115px;
+            left: 10px;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .silex-id-1518215573209-9 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1518221451690-0 {
+            width: 366px;
+            min-height: 268px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(106, 106, 106, 1);
+            border-width: 4px 4px 4px 4px;
+            border-style: solid;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .silex-id-1478366450713-3 {
+            top: 505px;
+            left: 5px;
+            background-color: rgba(255, 152, 43, 1);
+            min-width: 960px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1478366450713-3 {
+                top: 475px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1478366450713-2 {
+            min-height: 80px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 105px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1478366450713-2 {
+                min-height: 120px;
+            }
+        }
+        
+        .silex-id-1518127547792-0 {
+            width: 430px;
+            background-color: transparent;
+            min-height: 70px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1518129201345-2 {
+            width: 120px;
+            background-color: transparent;
+            min-height: 70px;
+            top: 0px;
+            left: 431px;
+        }
+        
+        .silex-id-1519155308709-6 {
+            width: 200px;
+            background-color: transparent;
+            min-height: 80px;
+            top: 0px;
+            left: 760px;
+        }
+        
+        .silex-id-1518214447359-1 {
+            min-width: 960px;
+            top: 614px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 1);
+        }
+        
+        .silex-id-1518214447356-0 {
+            width: 960px;
+            min-height: 390px;
+            top: 15px;
+            left: 215px;
+        }
+        
+        .silex-id-1518216543389-11 {
+            width: 960px;
+            background-color: rgb(255, 255, 255);
+            min-height: 320px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .silex-id-1519421777762-0 {
+            width: 320px;
+            background-color: rgb(255, 255, 255);
+            min-height: 50px;
+            top: 320px;
+            left: 0px;
+        }
+        
+        .silex-id-1519421923988-1 {
+            width: 320px;
+            background-color: rgb(255, 255, 255);
+            min-height: 50px;
+            top: 320px;
+            left: 640px;
+        }
+        
+        .silex-id-1519422721820-2 {
+            width: 320px;
+            background-color: rgb(255, 255, 255);
+            min-height: 50px;
+            top: 320px;
+            left: 320px;
+        }
+    </style>
+    <title>A1000ton Cores da Madrugada</title>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)","left":"0px","top":"0px"},"silex-id-1474394621033-3":{"top":"140px","left":"5px","background-color":"rgba(46,46,46,1)","min-width":"960px"},"silex-id-1474394621032-2":{"min-height":"320px","background-color":"rgba(53,233,117,1)","width":"960px","top":"15px","left":"100px","border-radius":"20px 20px 20px 20px ","border-width":"5px 5px 5px 5px ","border-style":"solid"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"90px","background-color":"rgba(149,149,149,1)","width":"960px","top":"15px","left":"220px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"rgba(180,180,180,1)","min-width":"960px"},"silex-id-1478366450713-2":{"min-height":"80px","background-color":"transparent","width":"960px","top":"15px","left":"105px"},"silex-id-1478366450713-3":{"top":"505px","left":"5px","background-color":"rgba(255,152,43,1)","min-width":"960px"},"silex-id-1518112029294-0":{"width":"671px","min-height":"81px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518112395580-3":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518114133493-5":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wireframe.gif')"},"silex-id-1518114455780-6":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"9px","left":"151px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('tintas.gif')"},"silex-id-1518115105918-7":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"130px","left":"152px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('mario_coins.gif')"},"silex-id-1518115106366-8":{"width":"123px","background-color":"rgb(255, 255, 255)","min-height":"109px","top":"129px","left":"16px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"20px 20px 20px 20px ","background-image":"url('wall.jpg')"},"silex-id-1518116903648-0":{"width":"220px","background-color":"rgba(79,24,139,1)","min-height":"218px","top":"10px","left":"400px","border-radius":"10px 10px 10px 10px "},"silex-id-1518116929404-1":{"width":"90px","min-height":"90px","top":"115px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518116972654-2":{"width":"90px","min-height":"90px","top":"10px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518117941686-4":{"width":"90px","min-height":"90px","top":"10px","left":"115px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118022345-5":{"width":"90px","min-height":"90px","top":"115px","left":"10px","border-width":"2px 2px 2px 2px ","border-style":"solid","border-radius":"5px 5px 5px 5px "},"silex-id-1518118247004-6":{"width":"1200px","background-color":"","min-height":"933px","top":"15px","left":"100px"},"silex-id-1518127547792-0":{"width":"430px","background-color":"transparent","min-height":"70px","top":"0px","left":"0px"},"silex-id-1518128342871-1":{"width":"340px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"0px","left":"700px"},"silex-id-1518129201345-2":{"width":"120px","background-color":"transparent","min-height":"70px","top":"0px","left":"431px"},"silex-id-1518131257789-6":{"width":"","background-color":"","min-height":"398px"},"silex-id-1518131257790-7":{"top":"775px","left":"5px"},"silex-id-1518214447356-0":{"width":"960px","background-color":"","min-height":"390px","top":"15px","left":"215px"},"silex-id-1518214447359-1":{"min-width":"960px","top":"614px","left":"5px","background-color":"rgba(0,0,0,1)"},"silex-id-1518214904249-2":{"width":"20px","min-height":"20px","top":"5px","left":"5px"},"silex-id-1518214942943-3":{"width":"20px","min-height":"20px","top":"35px","left":"5px"},"silex-id-1518214998514-4":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"90px","top":"0px","left":"860px"},"silex-id-1518215062791-5":{"width":"20px","min-height":"20px","top":"65px","left":"5px"},"silex-id-1518215099148-6":{"width":"56px","min-height":"20px","top":"5px","left":"30px"},"silex-id-1518215131628-7":{"width":"65px","min-height":"20px","top":"35px","left":"30px"},"silex-id-1518215138674-8":{"width":"56px","min-height":"20px","top":"65px","left":"30px"},"silex-id-1518215573209-9":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518216543389-11":{"width":"960px","background-color":"rgb(255, 255, 255)","min-height":"320px","top":"0px","left":"0px"},"silex-id-1518221451690-0":{"width":"366px","min-height":"268px","top":"10px","left":"10px","background-color":"rgba(106,106,106,1)","border-width":"4px 4px 4px 4px ","border-style":"solid","border-radius":"6px 6px 0 0 "},"silex-id-1518270978944-0":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518271128119-1":{"width":"847px","min-height":"120px","top":"0px","left":"10px","background-color":"transparent"},"silex-id-1518469699327-0":{"width":"670px","background-color":"rgb(255, 255, 255)","min-height":"900px","top":"0px","left":"0px"},"silex-id-1518469857414-1":{"width":"800px","background-color":"rgb(255, 255, 255)","min-height":"800px","top":"0px","left":"0px"},"silex-id-1518469927284-2":{"width":"","background-color":"","min-height":"918px"},"silex-id-1519153378932-2":{"width":"536px","background-color":"rgb(255, 255, 255)","min-height":"460px","top":"0px","left":"0px"},"silex-id-1519153378934-4":{"width":"200px","background-color":"transparent","min-height":"200px","top":"0px","left":"536px"},"silex-id-1519153378932-1":{"width":"960px","background-color":"","min-height":"460px","top":"15px","left":"220px"},"silex-id-1519155308709-6":{"width":"200px","background-color":"transparent","min-height":"80px","top":"0px","left":"760px"},"silex-id-1519421777762-0":{"width":"320px","background-color":"rgb(255, 255, 255)","min-height":"50px","top":"320px","left":"0px"},"silex-id-1519421923988-1":{"width":"320px","background-color":"rgb(255, 255, 255)","min-height":"50px","top":"320px","left":"640px"},"silex-id-1519422721820-2":{"width":"320px","background-color":"rgb(255, 255, 255)","min-height":"50px","top":"320px","left":"320px"}},"mobile":{"silex-id-1478366450713-3":{"top":"475px","left":"0px"},"silex-id-1478366450713-2":{"min-height":"120px"}},"componentData":{}}]
+    </script>
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+
+
+    <meta name="website-width" content="960">
+    <style type="text/css" class="silex-style-settings">
+        .website-width {
+            width: 960px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="description" content="Quadrinhos de aventuras, humor e surpresas. Desenhos loucos.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="A1000ton Cores da Madrugada">
+    <meta name="og:title" content="A1000ton Cores da Madrugada">
+    <meta name="twitter:description" content="Conheça a arte de Amilton, um escritor brasileiro de Histórias em Quadrinhos.">
+    <meta name="og:description" content="Conheça a arte de Amilton, um escritor brasileiro de Histórias em Quadrinhos.">
+    <meta name="twitter:image" content="http://a1000ton.com.br/central/layout/colher.gif">
+    <meta name="og:image" content="http://a1000ton.com.br/central/layout/colher.gif">
+    <meta name="twitter:site" content="triptofano">
+
+
+
+
+
+
+
+    <link href="http://a1000ton.com.br/central/layout/icons8-bug-32.png" rel="shortcut icon">
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="publicationPath" content="/api/1.0/ftp/exec/put/teste">
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-br {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2563358-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-2563358-10');
+    </script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+          _paq.push(["setCookieDomain", "*.a1000ton.com.br"]);
+          _paq.push(["setDomains", ["*.a1000ton.com.br/central/mat"]]);
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//a1000ton.com.br/central/mat/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+    </script>
+    <!-- End Matomo Code -->
+
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var owa_baseUrl = 'https://a1000ton.com.br/central/owa/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', '27b0536f944f6960c0153a040e1f249c']);
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
+        
+        (function() {
+        	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+        	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+        	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+        	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+        }());
+        //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
+
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+
+
+        <a id="page-br" data-silex-type="page" class="page-element page-link-active">Br</a><a id="page-es" data-silex-type="page" class="page-element">Es</a><a id="page-en" data-silex-type="page" class="page-element">En</a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366444112-1 section-element" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
+            <div data-silex-type="text" class="editable-style silex-id-1518112029294-0 text-element page-br paged-element page-link-active" data-silex-id="silex-id-1518112029294-0" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Aqui há</span> <span style="color: rgb(255, 153, 0);">1000 tons</span> <span style="color: rgb(255, 255, 0);">de cores </span>da madrugada.</h1>
+                </div>
+            </div>
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518271128119-1 paged-element page-en page-link-active" data-silex-id="silex-id-1518271128119-1" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Here are </span><span style="color: rgb(255, 153, 0);">1000 tones</span> <span style="color: rgb(255, 255, 0);"><span style="color: rgb(0, 0, 0);">of dawn </span>colors.</span>
+                    </h1>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518270978944-0 paged-element page-es page-link-active" data-silex-id="silex-id-1518270978944-0" style="" data-silex-href="#!page-br">
+                <div class="silex-element-content normal">
+                    <h1><span style="color: rgb(255, 0, 0);">Aquí hay </span><span style="color: rgb(255, 153, 0);">1000 tonos</span> <span style="color: rgb(255, 255, 0);">de colores </span>de la madrugada.</h1>
+                </div>
+            </div>
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style silex-id-1518214998514-4 container-element" data-silex-id="silex-id-1518214998514-4" style="">
+                <div data-silex-type="image" class="editable-style silex-id-1518214904249-2 image-element page-link-active" data-silex-id="silex-id-1518214904249-2" style="" data-silex-href="#!page-br"><img src="central/layout/br.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1518214942943-3 image-element" data-silex-id="silex-id-1518214942943-3" style="" data-silex-href="#!page-es"><img src="central/layout/cl.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1518215062791-5 image-element" data-silex-id="silex-id-1518215062791-5" style="" data-silex-href="#!page-en"><img src="central/layout/um.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1518215099148-6 text-element page-link-active" data-silex-id="silex-id-1518215099148-6" style="" data-silex-href="#!page-br">
+                    <div class="silex-element-content normal">PT_Br</div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1518215131628-7" data-silex-id="silex-id-1518215131628-7" style="" data-silex-href="#!page-es">
+                    <div class="silex-element-content normal">Español<br></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1518215138674-8" data-silex-id="silex-id-1518215138674-8" style="" data-silex-href="#!page-en">
+                    <div class="silex-element-content normal">English</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1474394621033-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
+            <div data-silex-type="text" class="editable-style silex-id-1518112395580-3 text-element page-en paged-element" data-silex-id="silex-id-1518112395580-3" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Welcome to the a1000ton.com.br portal!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">A portal of Arts and Technology.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">To see ARTS, click the icon with ink.</span></span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">To see TECHNOLOGY, click the icon with lights.</span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">To visit my SOCIAL WALL,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">click the icon with bricks.</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">To help me with GOLD,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">click the icon with coins.</span><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>The author is grateful for your visit!</i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-silex-type="container" class="editable-style silex-id-1518116903648-0 container-element" data-silex-id="silex-id-1518116903648-0" style="">
+                <div data-silex-type="image" class="editable-style silex-id-1518117941686-4 image-element page-br paged-element" data-silex-id="silex-id-1518117941686-4" style="" title="Ruindows Blog">
+                    <a href="https://a1000ton.com.br/ruindows/"><img src="central/layout/wireframes.gif" class="silex-element-content"></a>
+                </div>
+
+
+
+                <div data-silex-type="image" class="editable-style image-element silex-id-1518116972654-2 page-br paged-element" data-silex-id="silex-id-1518116972654-2" style="" title="Quadrinhos">
+                    <a href="https://hq.a1000ton.com.br/"><img src="central/layout/tinta_girando.gif" class="silex-element-content"></a>
+                </div>
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1518116929404-1 image-element page-br paged-element" data-silex-id="silex-id-1518116929404-1" style="" title="Mina de Ouro">
+                    <a href="https://www.a1000ton.com.br/mina-de-ouro/"><img src="central/layout/mario_money.gif" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1518118022345-5 image-element page-br paged-element" data-silex-id="silex-id-1518118022345-5" style="" title="Muro Social">
+                    <a href="https://www.a1000ton.com.br/mural/"><img src="central/layout/the_wall.jpg" class="silex-element-content"></a>
+                </div>
+            </div>
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518215573209-9 paged-element page-es" data-silex-id="silex-id-1518215573209-9" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Bienvenido al portal a1000ton.com.br!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Un portal de Artes y Tecnología.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);">Para ver ARTES, clic el icono con tinta.</span></span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">Para ver TECNOLOGÍA, clic el icono con luces.</span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">Para visitar mi MURAL SOCIAL,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);">clic el icono con ladrillos.</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">Para ayudarme con ORO,</span></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 0);">clic el icono con monedas.</span><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>¡El autor agradece demasiado su visita!</i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518221451690-0 paged-element page-br" data-silex-id="silex-id-1518221451690-0" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><b>Bem Vindo ao portal a1000ton.com.br!</b></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Um portal de Artes &amp; Tecnologia.<br></span></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="background-color: rgb(255, 255, 255);"><a href="https://hq.a1000ton.com.br/">Para ver ARTES, use o ícone com tinta.</a><span> </span><span></span></span>
+                        </span>
+                    </div>
+                    <div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);"><a href="https://www.a1000ton.com.br/ruindows">Para ver TECNOLOGIA, use o ícone com luzinhas.</a><br></span></div>
+                    <div style="text-align: center;">
+                        <a href="https://www.a1000ton.com.br/mural/"><br></a>
+                    </div>
+                    <a href="https://www.a1000ton.com.br/mural/">
+                    </a>
+                    <div style="text-align: center;"><a href="https://www.a1000ton.com.br/mural/"><span style="color: rgb(255, 153, 0);">Para visitar meu MURAL SOCIAL,<br></span></a></div>
+                    <a href="https://www.a1000ton.com.br/mural/">
+                    </a>
+                    <div style="text-align: center;"><span style="color: rgb(255, 153, 0);"><a href="https://www.a1000ton.com.br/mural/">use o ícone com tijolos.</a><br></span></div>
+                    <div style="text-align: center;"><a href="https://www.a1000ton.com.br/mina-de-ouro/"><span style="color: rgb(255, 255, 0);">Para me ajudar com OURO,<br></span></a></div>
+                    <a href="https://www.a1000ton.com.br/mina-de-ouro/">
+                    </a>
+                    <div style="text-align: center;"><a href="https://www.a1000ton.com.br/mina-de-ouro/"><span style="color: rgb(255, 255, 0);">use o ícone com moedas.</span></a><br></div>
+                    <div style="text-align: center;"><br></div>
+                    <div style="text-align: center;"><i>O autor agradece demais sua visita!<br></i></div>
+                    <div style="text-align: right;"><span style="background-color: rgb(224, 102, 102);"><span style="color: rgb(11, 83, 148);"><b><i>- Amilton Cores.</i></b></span></span><br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element paged-element page-es page-en page-br" data-silex-id="silex-id-1478366450713-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366450713-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366450713-2">
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1518127547792-0 html-element" data-silex-id="silex-id-1518127547792-0" style="">
+                <div class="silex-element-content">
+                    <div class="fb-like" data-href="https://www.facebook.com/madrugada1000/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="html" class="editable-style silex-id-1518129201345-2 html-element" data-silex-id="silex-id-1518129201345-2" style="">
+                <div class="silex-element-content"><iframe data-aa="823653" https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlhttps:="" index.htmlsrc="" scrolling="no" style="width:120px; height:60px; border:0px; padding:0;overflow:hidden"
+                        allowtransparency="true" data-silex-iframe-src="//ad.a-ads.com/823653?size=120x60" src="//ad.a-ads.com/823653?size=120x60"></iframe></div>
+            </div>
+
+            <div data-silex-type="html" class="editable-style html-element hide-on-mobile silex-id-1519155308709-6" data-silex-id="silex-id-1519155308709-6" style="" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
+                <div class="silex-element-content">
+                    <a href="//vishnuavatars.com/horoscope_for_today.html" target="_blank">
+                        <img src="//vishnuavatars.com/gr_informer.png" style="width:200px;" title="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral." alt="Mapa Atual do Ceu segundo a cultura Vedica ou Sideral.">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <iframe allowtransparency="true" id="emb_xcomm" class="embedly-xcomm" src="https://cdn.embedly.com/widgets/xcomm.html#name=platform&amp;sid=5e73b41684ca451897203fce5269c0f8" style="border: medium none; position: absolute; top: -9999em; width: 10px; height: 10px;"
+        frameborder="0"></iframe>
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518214447359-1 section-element paged-element hide-on-mobile page-es page-en page-br" data-silex-id="silex-id-1518214447359-1">
+        <div data-silex-type="container" class="editable-style silex-id-1518214447356-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1518214447356-0">
+
+            <div data-silex-type="html" class="editable-style silex-id-1518216543389-11 html-element" data-silex-id="silex-id-1518216543389-11" style="">
+                <div class="silex-element-content">
+                    <!-- LightWidget WIDGET -->
+                    <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe https:="" editor.silex.me="" api="" 1.0="" ftp="" exec="" get="" trindex.htmlhttps:="" index.htmlhttps:="" index.htmlsrc="" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"
+                        data-silex-iframe-src="//lightwidget.com/widgets/bea277ccc66e50f38b4932d4bfd0e28c.html" src="//lightwidget.com/widgets/bea277ccc66e50f38b4932d4bfd0e28c.html"></iframe></div>
+            </div>
+
+            <div data-silex-type="html" class="editable-style silex-id-1519421777762-0 html-element" data-silex-id="silex-id-1519421777762-0" style="">
+                <div class="silex-element-content"><iframe data-aa="851802" src="//ad.a-ads.com/851802?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style html-element silex-id-1519421923988-1" data-silex-id="silex-id-1519421923988-1" style="">
+                <div class="silex-element-content"><iframe data-aa="851807" src="//ad.a-ads.com/851807?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></div>
+            </div>
+            <div data-silex-type="html" class="editable-style html-element silex-id-1519422721820-2" data-silex-id="silex-id-1519422721820-2" style="">
+                <div class="silex-element-content"><iframe data-aa="851804" src="//ad.a-ads.com/851804?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
