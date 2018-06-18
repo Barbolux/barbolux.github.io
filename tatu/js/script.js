@@ -7,3 +7,10 @@
   js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', '
+
+$(function() {
+  $('body').on('pageChanged', function (event, pageName) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
