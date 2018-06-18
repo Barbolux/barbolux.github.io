@@ -16,11 +16,26 @@ $(function() {
 });
 
 $(function() {
+  $('body').on('pageChanged', function (event, um) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+$(function() {
   $('body').on('pageChanged', function (event, page-dois) {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, '500', 'swing');
   });
 });
+
+$(function() {
+  $('body').on('pageChanged', function (event, dois) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
 
 $(function() {
   $('body').on('pageChanged', function (event, page-tres) {
@@ -30,6 +45,14 @@ $(function() {
 });
 
 $(function() {
+  $('body').on('pageChanged', function (event, tres) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+
+$(function() {
   $('body').on('pageChanged', function (event, page-quatro ) {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, '500', 'swing');
@@ -37,11 +60,27 @@ $(function() {
 });
 
 $(function() {
+  $('body').on('pageChanged', function (event, quatro) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+
+$(function() {
   $('body').on('pageChanged', function (event, page-cinco) {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, '500', 'swing');
   });
 });
+
+$(function() {
+  $('body').on('pageChanged', function (event, cinco) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
