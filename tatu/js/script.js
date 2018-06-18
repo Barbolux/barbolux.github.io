@@ -9,8 +9,42 @@
 }(document, 'script', '
 
 $(function() {
-  $('body').on('pageChanged', function (event, pageName) {
+  $('body').on('pageChanged', function (event, Um) {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, '500', 'swing');
   });
 });
+
+$(function() {
+  $('body').on('pageChanged', function (event, Dois) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+$(function() {
+  $('body').on('pageChanged', function (event, Tres) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+$(function() {
+  $('body').on('pageChanged', function (event, Quatro ) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+$(function() {
+  $('body').on('pageChanged', function (event, Cinco) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, '500', 'swing');
+  });
+});
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2563358-10');
