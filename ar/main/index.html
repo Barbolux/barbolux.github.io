@@ -4,49 +4,53 @@
   </head>
   <body>
     <a-scene renderer="precision: medium">
-        <a-assets><a-asset-item id="boeing" src="https://barbolux.github.io/ar/boeing/boeing10.glb"></a-asset-item></a-assets>
-      <a-scene>
-  <a-assets>
-    <a-asset-item id="saci" src="https://barbolux.github.io/ar/teste/saci_01.glb"></a-asset-item>
-        <a-asset-item id="trex" src="https://barbolux.github.io/ar/teste/trex_01.glb"></a-asset-item>
-    <img id="sky" src="https://barbolux.github.io/ar/boeing/ceu.jpg">
-  </a-assets>
+
+        <a-assets>
+		<a-asset-item id="boeing" src="https://barbolux.github.io/ar/main/glb/boeing_01.glb"></a-asset-item>
+		<a-asset-item id="saci" src="https://barbolux.github.io/ar/main/glb/saci_01.glb"></a-asset-item>
+		<a-asset-item id="trex" src="https://barbolux.github.io/ar/main/glb/trex_01.glb"></a-asset-item>
+		<a-asset-item id="tree" src="https://barbolux.github.io/ar/main/glb/tree/scene.gltf"></a-asset-item>
+		<img id="sky" src="https://barbolux.github.io/ar/boeing/ceu.jpg">
+		</a-assets>
         
-  <a-sky src="#sky" animation="property: rotation; to: 0 -360 0; loop: true; dur: 60000"></a-sky>
-</a-scene>
+		<a-sky src="#sky" animation="property: rotation; to: 0 -360 360; loop: true; dur: 40000"></a-sky>
       
         <a-entity gltf-model="#boeing"
-          position="-2 4 -5"
+          position="-4 4 -5"
           scale="0.4 0.4 0.4"
           rotation="0 80 -10"
-          animation="property: rotation; to: 0 440 -10; loop: true; dur: 7500">
-          id="boeing"
+          animation="property: rotation; to: 360 440 -10; loop: true; dur: 7500">
           
-          ></a-entity>
+		  id="boeing"></a-entity>
       
        <a-entity gltf-model="#saci"
           position="0 0 -3"
-          scale="0.2 0.2 0.2"
+          scale="0.1 0.1 0.1"
           rotation="0 10 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 1000">
-          id="saci1"
-          ></a-entity>
           
-          <a-entity gltf-model="#trex"
+		  id="saci"></a-entity>
+          
+       <a-entity gltf-model="#trex"
           position="3 -0.2 -3.2"
           scale="0.6 0.6 0.6"
           rotation="0 -80 0"
-          id="trex1"
-          ></a-entity>
+          
+		  id="trex"></a-entity>
       
+	   <a-entity gltf-model="#tree"
+          position="0 0 0"
+          scale="0.6 0.6 0.6"
+          rotation="0 0 0"
+          
+		  id="tree"></a-entity>
+	  
+	  
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="shader:flat"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="shader:flat"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="shader:flat"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="90" height=90 color="#996600"></a-plane>
       
-      <!--<a-sky color="#ccffff"></a-sky>
-      <a-light type="ambient" color="#fffcc" intensity="0.8"></a-light>
-      <a-light type="spot" color="#fffcc" intensity="0.6" position="0 9 0"></a-light>-->
     </a-scene>
   </body>
 </html>
