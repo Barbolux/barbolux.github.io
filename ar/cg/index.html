@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+  </head>
+  <body>
+   <!-- <a-scene renderer="precision: medium"> -->
+<a-scene>
+
+        <a-assets>
+		<a-asset-item id="boeing" src="https://barbolux.github.io/ar/main/glb/boeing_01.glb"></a-asset-item>
+		<img id="sky" src="https://barbolux.github.io/ar/main/sky/cg.jpg">
+		</a-assets>
+        
+		<a-sky src="#sky" animation="property: rotation; to: 0 -360 360; loop: true; dur: 40000"></a-sky>
+      
+        <a-entity gltf-model="#boeing"
+          position="-4 4 -5"
+          scale="0.4 0.4 0.4"
+          rotation="0 80 -10"
+          animation="property: rotation; to: 360 440 -10; loop: true; dur: 7500">
+          
+		  id="boeing"></a-entity>
+      
+       <a-entity gltf-model="#saci"
+          position="0 0 -3"
+          scale="0.1 0.1 0.1"
+          rotation="0 10 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 1000">
+          
+		  id="saci"></a-entity>
+          
+       <a-entity gltf-model="#trex"
+          position="3 -0.2 -3.2"
+          scale="0.6 0.6 0.6"
+          rotation="0 -80 0"
+          
+		  id="trex"></a-entity>
+      
+	   <!––<a-entity gltf-model="#tree"
+          position="0 0 0"
+          scale="0.6 0.6 0.6"
+          rotation="0 0 0"
+          
+		  id="tree"></a-entity>––>
+	  
+	  
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="shader:flat"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="shader:flat"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="shader:flat"></a-cylinder>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="90" height=90 color="#996600"></a-plane>
+      
+    </a-scene>
+  </body>
+</html>
