@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Fazenda do Pica Pau Verde</title>
+
+    <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component%40%5e0.5.1/dist/aframe-text-geometry-component.min.js"></script>-->
+    </head>
+
+<body>
+    
+      <a-scene>
+      
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+      
+      <a-sphere
+      id="player"
+      sound="src: glb/picapau_reggae.mp3; on: click; loop: true;"
+      position="-6.5 4 -5"
+      radius="1.25"
+      src="glb/song2.jpg"
+      
+      animation__rotate="property: rotation; to: 0 360 0; dur: 20000; loop: true;"
+      animation__mouseenter="property: radius; to: 1.0; dur: 2600; easing:easeInOutElastic; startEvents: mouseenter;"
+      animation__mouseleave_1="property: radius; to: 0.5; dur: 100; startEvents: mouseleave;"
+      animation__mouseleave_2="property: radius; from: 0.5; to: 1.25; delay: 150; dur: 900; startEvents: mouseleave;"
+      ></a-sphere>
+
+      <a-box position="2 0.5 -3" rotation="0 45 0" color="#A0522D"
+      animation__mouseclick="property: opacity; to: 0; startEvents: click;"></a-box>
+      <a-box position="3.1 0.5 -3.3" rotation="0 12 0" color="#A0522D"
+      animation__mouseclick="property: opacity; to: 0; startEvents: click;"></a-box>></a-box>
+      <a-box position="4.4 0.5 -2.2" rotation="0 71 0" color="#A0522D"
+      animation__mouseclick="property: opacity; to: 0; startEvents: click;"></a-box>></a-box>
+
+      <a-box position="5 0.5 4" rotation="0 45 0" color="#A0522D"
+      animation__mouseclick="property: opacity; to: 0; startEvents: click;"></a-box>
+      <a-box position="6.1 0.5 4" rotation="0 12 0" color="#A0522D"
+      animation__mouseclick="property: opacity; to: 0; startEvents: click;"></a-box>></a-box>
+
+      <a-cylinder position="-6.5 0.75 -3" radius="0.5" height="1.5" color="#7FFFD4"></a-cylinder>
+
+      <a-plane position="0 0.01 -4" rotation="-90 0 0" width="4" height="4" color=green></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#7BC8A4"></a-plane>
+
+      <a-entity
+      title="Fazenda"
+      position="-5 4 -5"
+      material="color: brown;"
+      text-geometry="value: Fazenda do; size: 1.2; height: 0.08; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.1; curveSegments: 4; font:https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-entity>
+      
+      <a-entity
+      position="-5 3 -5"
+      material="color: green;"
+      text-geometry="value: Pica Pau Verde; size: 0.8;"></a-entity>
+      
+
+    <a-gltf-model id="#saci_01"
+    src="glb/saci_01.glb"
+    position="-2 0 -5"
+    rotation="0 0 0"
+    scale="0.15 0.15 0.15"
+    animation__1="property: position; from: -2 0 -5; to: -2 1 -5; loop: true; dur: 900; easing:easeInOutElastic;"
+    animation__2="property: rotation; to: 0 360 0; dur: 9900; loop: true;"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#saci_02"
+     src="glb/saci_02.glb"
+     position="0 0 -5"
+     rotation="0 0 0"
+     scale="0.1 0.1 0.1"
+     animation__mouseclick="property: rotation; from: 0 0 0; to: 0 360 0; dur: 1200; easing:easeInOutElastic; startEvents: click;"
+     animation__mouseenter="property: scale; from: 0.1 0.1 0.1; to: 0.11 0.09 0.11; dur: 300; easing:easeInOutElastic; startEvents: mouseenter;"
+     animation__mouseleave="property: scale; from: 0.11 0.09 0.11; to: 0.1 0.1 0.1; delay: 50; dur: 100; easing:easeInOutElastic; startEvents: mouseleave;"
+     ></a-gltf-model>
+
+    <a-gltf-model id="#curupira"
+    src="glb/curupira_01.glb"
+    position="-5 0 -5"
+    rotation="0 60 0"
+    scale="0.35 0.35 0.35"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#balde"
+    src="glb/balde.glb"
+    position="-2 0 -2.8"
+    rotation="0 0 0"
+    scale="1 1 1"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#barraco"
+    src="glb/barraco.glb"
+    position="2 0 -8"
+    rotation="0 60 0"
+    scale="1.3 1.4 1.3"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#carrinho_de_mao"
+    src="glb/carrinho_de_mao.glb"
+    position="-8 0 8.5"
+    rotation="0 110 0"
+    scale="3.1 3.1 3.1"
+    animation__mouseclick_1="property: rotation; from: 0 110 0; to: 0 90 0; dur: 500; easing:easeInOutElastic; startEvents: click;"
+    animation__mouseclick_2="property: position; from: -8 0 8.5; to: 8 0 8.5; delay: 500; dur: 1200; startEvents: click;"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#carro_de_boi_01"
+    src="glb/carro_de_boi_01.glb"
+    position="3 0 3"
+    rotation="0 60 0"
+    scale="1 1 1"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#carro_de_boi_02"
+    src="glb/carro_de_boi_02.glb"
+    position="8 0 4"
+    rotation="0 50 0"
+    scale="3.3 3.3 3.3"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#cerca"
+    src="glb/cerca.glb"
+    position="-7.8 0 -3"
+    rotation="0 60 0"
+    scale="1 1 1"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#casa_01"
+    src="glb/casa_01.glb"
+    position="-12 0 5"
+    rotation="0 90 0"
+    scale="2.5 2.5 2.5"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#lenha"
+    src="glb/lenha.glb"
+    position="5 0.2 -5.5"
+    rotation="0 50 0"
+    scale="0.16 0.16 0.16"
+    ></a-gltf-model>
+
+    <a-gltf-model id="#machado"
+    src="glb/machado.glb"
+    position="4.5 1 -5.5"
+    rotation="270 60 180"
+    scale="3 3 3"
+    ></a-gltf-model>
+      
+    <a-sky src="glb/ceu.jpg" animation="property: rotation; to: 0 -360 0; loop: true; dur: 200000;"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
+
+
