@@ -1,2 +1,2 @@
 # barbolux.github.io
-página pessoal
+Minhas páginas pessoais.
